@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero from "../components/hero";
+import Hero from "../components/Hero";
 import Footer from "@/components/Footer";
 import Partners from "@/components/Partners";
 
