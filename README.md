@@ -1,7 +1,7 @@
-#ICITR 2024 Official Website 
+## ICITR 2024 Official Website 
 
 
-## Getting Started
+# Getting Started
 
 First, run the development server:
 
