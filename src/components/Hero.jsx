@@ -3,7 +3,10 @@ import ButtonPrimary from "@/components/ButtonPrimary";
 import ButtonSecondary from "@/components/ButtonSecondary";
 import Image from "next/image";
 
-function Hero() {
+function Hero({
+  subtitle = "9th International Conference<br />on Information Technology Research",
+  buttonsVisible = true,
+}) {
   return (
     <div id="hero" className="bg-white">
       <Navbar />
@@ -20,23 +23,24 @@ function Hero() {
               //   height={250}
               alt=""
             />
-            <span className="my-0 sm:my-2 text-2xl sm:text-4xl px-4 tracking-tight text-black-primary leading-loose">
-              9th International Conference
-            </span>
-            <span className="my-0 sm:my-2 text-2xl sm:text-4xl px-4 tracking-tight text-black-primary leading-loose">
-              on Information Technology Research
-            </span>
-            <div className="mt-6 flex items-center justify-center gap-x-6">
-              <a href="#">
-                <ButtonPrimary
-                  text="Submit Papers"
-                  onClick={() => {}}
-                ></ButtonPrimary>
-              </a>
-              <a href="#">
-                <ButtonSecondary text="See Tracks" onClick={() => {}} />
-              </a>
-            </div>
+            <span
+              className="my-0 sm:my-2 text-2xl sm:text-4xl px-4 tracking-tight text-black-primary"
+              style={{ lineHeight: "1.8" }}
+              dangerouslySetInnerHTML={{ __html: subtitle }}
+            />
+            {buttonsVisible && (
+              <div className="mt-6 flex items-center justify-center gap-x-6">
+                <a href="#">
+                  <ButtonPrimary
+                    text="Submit Papers"
+                    onClick={() => {}}
+                  ></ButtonPrimary>
+                </a>
+                <a href="#">
+                  <ButtonSecondary text="See Tracks" onClick={() => {}} />
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>

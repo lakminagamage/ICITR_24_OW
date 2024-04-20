@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export default function PaperSubmission() {
   return (
     <div>
-      <Hero />
+      <Hero subtitle="Paper Submissions are now open<br/>for ICITR 2024" />
       <Timeline />
       <Tracks />
       <Instructions />
