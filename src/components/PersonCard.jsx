@@ -1,6 +1,6 @@
 function PersonCard({ name, description, image, scholarLink, linkedinLink }) {
   return (
-    <div className=" w-96 h-32 flex justify-start bg-white rounded-2xl border border-gray-400 px-4 py-4 shadow-sm mx-4 my-4">
+    <div className=" w-96 h-32 flex justify-start bg-gradient-to-r from-gray-200 to-white rounded-2xl border border-gray-400 px-4 py-4 shadow-sm mx-4 my-4">
       <img
         src={`/img/committee/${image}.jpg`}
         alt=""
