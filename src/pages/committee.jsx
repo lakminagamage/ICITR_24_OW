@@ -132,7 +132,7 @@ export default function Committee() {
     <div className="bg-white">
       <Hero
         subtitle={"Meet Our Masterminds<br/>Behind The Success of 9 Years"}
-        buttonsVisible={false}
+        buttonsVisible={true}
       />
       <div className="container mx-auto py-12">
         <CommitteeGrid people={coChairs} title={"Honorary Co-Chairs"} />
