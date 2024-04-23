@@ -1,9 +1,7 @@
 function Footer() {
-    return (
-        <div className="my-10 text-center">
-            Footer Here
-        </div>
-    );
+  return (
+    <div className="text-center bg-white text-black-primary">Footer Here</div>
+  );
 }
 
 export default Footer;
