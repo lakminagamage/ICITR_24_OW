@@ -2,11 +2,13 @@ import Navbar from "@/components/Navbar";
 import ButtonPrimary from "@/components/ButtonPrimary";
 import ButtonSecondary from "@/components/ButtonSecondary";
 import Image from "next/image";
+import {useRouter} from 'next/router';
 
 function Hero({
   subtitle = "9th International Conference<br />on Information Technology Research",
   buttonsVisible = true,
 }) {
+  const router = useRouter();
   return (
     <div id="hero" className="bg-white">
       <Navbar />
@@ -30,14 +32,14 @@ function Hero({
             />
             {buttonsVisible && (
               <div className="mt-6 flex items-center justify-center gap-x-6">
-                <a href="#">
+                <p>
                   <ButtonPrimary
                     text="Submit Papers"
-                    onClick={() => {}}
+                    onClick={() => {router.push('/paperSubmission')}}
                   ></ButtonPrimary>
-                </a>
+                </p>
                 <a href="#">
-                  <ButtonSecondary text="See Tracks" onClick={() => {}} />
+                  <ButtonSecondary text="See Tracks" onClick={() => {router.push('/paperSubmission/#tracks')}} />
                 </a>
               </div>
             )}
