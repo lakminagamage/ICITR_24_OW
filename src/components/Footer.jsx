@@ -1,16 +1,19 @@
+import { useRouter } from 'next/router';
+
 const navigation = {
+  
   resources: [
-    { name: 'Submit Papers', href: '#' },
-    { name: 'Past Abstracts', href: '#' },
-    { name: 'Gallery', href: '#' }
+    { name: 'Submit Papers', href: '/paperSubmission' },
+    { name: 'Past Abstracts', href: '/pastAbstracts' },
+    { name: 'Gallery', href: '/#gallery' }
   ],
   contacts: [
-    { name: 'Contacts', href: '#' },
+    { name: 'Contacts', href: '/#contacts' },
     { name: 'Social Media', href: '#' }
   ],
   institute: [
-    { name: 'University', href: '#' },
-    { name: 'Faculty of IT', href: '#' }
+    { name: 'University', href: 'https://uom.lk' },
+    { name: 'Faculty of IT', href: 'https://uom.lk/itfac' }
   ],
   social: [
     {
@@ -53,6 +56,7 @@ const navigation = {
 }
 
 export default function Footer() {
+  const router = useRouter()
   return (
     <footer className="bg-white" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -67,9 +71,9 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.resources.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                      <p onClick={() => {router.push(item.href)}} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                         {item.name}
-                      </a>
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -79,9 +83,9 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.contacts.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                      <p onClick={() => {router.push(item.href)}} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                         {item.name}
-                      </a>
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -124,7 +128,7 @@ export default function Footer() {
               <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="flex w-full items-center justify-center rounded-md bg-blue-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Subscribe
                 </button>
