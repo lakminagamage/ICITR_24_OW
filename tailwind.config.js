@@ -13,7 +13,9 @@ module.exports = {
         "gray-primary": "#515151",
         "blue-dark": "#2C3E50",
         "red-primary": "#A40E0E",
-        "black-primary": "#1B1919"
+        "black-primary": "#1B1919",
+        "gray-primary": "#666666",
+        "gray-secondary": "#E5E5E5",
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // 'Poppins' as the primary font with fallback to sans-serif
@@ -25,5 +27,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };
