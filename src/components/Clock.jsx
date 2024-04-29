@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 
 function ClockFace({ number, text }) {
   return (
-    <div className= 'w-32 ml-6'>
-      <div className='border-solid border-2 border-white rounded-lg h-28 flex justify-center items-center'>
-        <div className='text-white text-center text-6xl'>
+    <div className= 'w-16 md:w-32 ml-2 md:ml-6'>
+      <div className='border-solid border-2 border-white rounded-lg h-14 md:h-28 flex justify-center items-center'>
+        <div className='text-white text-center text-2xl md:text-6xl'>
           {number}
         </div>
       </div>
-      <div className='text-white text-center text-xl'>
+      <div className='text-white text-center text-xs md:text-xl'>
         {text}
       </div>
     </div>
@@ -17,7 +17,7 @@ function ClockFace({ number, text }) {
 
 function Colon() {
   return (
-    <div className='text-white text-center text-6xl mt-7 ml-6'>:</div>
+    <div className='text-white text-center text-2xl md:text-6xl mt-3 md:mt-7 ml-2 md:ml-6'>:</div>
   )
 }
 
@@ -55,7 +55,7 @@ export default function Clock() {
   }, []);
 
   return (
-    <div className='bg-blue-500 w-full'>
+    <div className='bg-gradient-to-br from-blue-primary to-blue-400 w-full'>
       <div className="px-5 py-7 flex justify-center">
         <ClockFace number={days.toString().padStart(2, '0')} text='Days' />
         <Colon />
