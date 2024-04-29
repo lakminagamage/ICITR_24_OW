@@ -11,9 +11,9 @@ function Partners() {
     </p>
   </div>
   <div className="flex flex-col space-y-5 md:space-y-0 md:grid md:grid-rows-2 md:grid-flow-col md:gap-4 md:place-content-center">
-    <div className="space-y-5 md:space-y-0 md:grid md:grid-cols-2 md:grid-flow-row md:gap-x-20 md:place-content-center px-20">
+    <div className="gap-y-5 md:gap-y-0 md:grid md:grid-cols-2 md:grid-flow-row md:gap-x-20 md:place-content-center px-20">
     
-      <div className="flex flex-col items-center space-y-2">
+      <div className="flex flex-col items-center space-y-2 my-20">
         <div className="flex flex-row justify-center items-center space-x-3">
           <img unoptimized width={40} height={20} src="/img/partners/ms.jpg" alt="partner" className="h-20 w-40"/>
           <img unoptimized width={40} height={20} src="/img/partners/nvidia.jpeg" alt="partner" className="h-20 w-40"/>
@@ -22,7 +22,7 @@ function Partners() {
         <div className='text-lg font-semibold text-black text-center'>Platinum Partners</div>
       </div>
 
-      <div className="flex flex-col items-center space-y-3">
+      <div className="flex flex-col items-center space-y-3 my-20">
         <div className="flex flex-row justify-center items-center space-x-3">
           <img unoptimized width={40} height={20} src="/img/partners/nvidia.jpeg" alt="partner" className="h-20 w-40"/>
           <img unoptimized width={40} height={20} src="/img/partners/ms.jpg" alt="partner" className="h-20 w-40"/>
@@ -32,7 +32,7 @@ function Partners() {
       </div>
     </div>
    
-    <div className='flex flex-col items-center space-y-3'>
+    <div className='flex flex-col items-center space-y-3 my-20'>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-1 place-content-center">
         <img unoptimized width={40} height={20} src="/img/partners/nvidia.jpeg" alt="partner" className="h-20 w-40"/>
         <img unoptimized width={40} height={20} src="/img/partners/ms.jpg" alt="partner" className="h-20 w-40"/>
