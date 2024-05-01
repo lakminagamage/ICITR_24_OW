@@ -13,7 +13,7 @@ export default function EventDescription() {
 
       {/* Description 01*/}
       <div className='flex flex-col md:flex-row md:items-center mb-10'>
-        <div className='font-bold md:basis-5/12 text-2xl mb-5 md:mb-0'>
+        <div className='font-bold text-black md:basis-5/12 text-2xl mb-5 md:mb-0'>
           <span className='text-6xl'>9th</span> International Conference on Information Technology Research
         </div>
         <div className='text-gray-500 md:basis-8/12 text-lg text-justify'>
