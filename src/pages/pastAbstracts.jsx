@@ -1,7 +1,7 @@
 function pastAbstracts() {
     return (
         <div className="text-center">
-           Here goes past abstracts
+           This page is under Construction.
         </div>
     );
 }
