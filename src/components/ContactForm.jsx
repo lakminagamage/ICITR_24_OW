@@ -1,5 +1,4 @@
 import { FaMapMarkerAlt, FaEnvelope, } from "react-icons/fa";
-import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
 
 const MyMapComponent = (props) => (
   <iframe
