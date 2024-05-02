@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <div className="bg-white">
       <Hero />
-      <Partners />
       <Clock />
       <EventDescription />
       <Team />
+      <Partners />
       <PhotoGallery />
       <ContactForm />
       <Footer />
