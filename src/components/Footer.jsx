@@ -61,7 +61,7 @@ export default function Footer() {
   const [loading, setLoading] = useState(false);
   const router = useRouter()
   return (
-    <footer className="bg-white border-t-2 rounded-t-xl" aria-labelledby="footer-heading">
+    <footer className="bg-white border-t-2" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>

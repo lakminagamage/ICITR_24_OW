@@ -42,7 +42,7 @@ function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <p href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">EC-UOM</span>
             <Image
               className=""
@@ -50,8 +50,17 @@ function Navbar() {
               width={200}
               height={100}
               alt=""
+              onClick={() => {
+                setLoading(true)
+                setTimeout(() => {
+                  setLoading(false)
+                }, 400)
+
+                router.push("/")
+              }
+              }
             />
-          </a>
+          </p>
         </div>
         <div className="flex lg:hidden">
           <button

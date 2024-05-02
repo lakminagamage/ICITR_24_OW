@@ -35,6 +35,7 @@ function Tracks() {
   ];
   return (
     <div
+      id="tracks"
       className="w-full pt-16 pb-12 bg-cover bg-fixed bg-center relative"
       style={{ backgroundImage: `url('/img/back_1.jpg')` }}
     >
