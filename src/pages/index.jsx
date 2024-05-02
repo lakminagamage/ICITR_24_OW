@@ -5,6 +5,7 @@ import EventDescription from "@/components/EventDescription";
 import PhotoGallery from "@/components/PhotoGallery";
 import Team from "@/components/Team";
 import Partners from "@/components/Partners";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <EventDescription />
       <Team />
       <PhotoGallery />
+      <ContactForm />
       <Footer />
     </div>
   );

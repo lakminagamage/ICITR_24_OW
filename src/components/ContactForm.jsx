@@ -1,5 +1,5 @@
 import { FaMapMarkerAlt, FaEnvelope, } from "react-icons/fa";
-import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
+
 
 const MyMapComponent = (props) => (
   <iframe
@@ -18,7 +18,7 @@ function ContactForm() {
     <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-xl lg:max-w-5xl ">
         <div className="flex items-center">
-          <FaEnvelope />
+          <FaEnvelope className="text-2xl text-blue-primary mr-4"/>
           <h2 className="text-2xl text-gray-900 ">Send a Message</h2>
         </div>
 
