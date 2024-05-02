@@ -15,11 +15,14 @@ const MyMapComponent = (props) => (
 function ContactForm() {
   return (
     <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <div className="mx-auto">
+            <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">Contact Us</h2>
+            <p className="mt-6 text-lg leading-8 text-center text-gray-primary">
+            Clarify your problems with us today.
+            </p>
+          </div>
       <div className="mx-auto max-w-xl lg:max-w-5xl ">
-        <div className="flex items-center">
-          <FaEnvelope className="text-2xl text-blue-primary mr-4"/>
-          <h2 className="text-2xl text-gray-900 ">Send a Message</h2>
-        </div>
+        
 
         <div className="mt-16 flex flex-col gap-10 sm:gap-y-15 lg:flex-row">
           <form action="#" method="POST" className="lg:flex-auto">

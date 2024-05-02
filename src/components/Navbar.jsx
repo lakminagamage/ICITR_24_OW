@@ -3,6 +3,7 @@ import { Dialog } from "@headlessui/react";
 import { FaBars, FaWindowClose } from "react-icons/fa";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Spinner from '@/components/Spinner';
 
 const navigation = [
   { name: "HOME", href: "/" },
@@ -16,6 +17,7 @@ function Navbar() {
   const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,7 +67,12 @@ function Navbar() {
           {navigation.map((item) => (
             <a
               key={item.name}
-              onClick={() => router.push(item.href)}
+              onClick={() => {
+                setLoading(true)
+                setTimeout(() => {
+                  setLoading(false)
+                }, 400)
+                router.push(item.href)}}
               className="text-sm font-semibold leading-6 text-blue-dark hover:text-blue-primary transition-colors duration-300 ease-in-out"
             >
               {item.name}
@@ -118,6 +125,7 @@ function Navbar() {
           </div>
         </Dialog.Panel>
       </Dialog>
+      <Spinner isVisible={loading} />
     </header>
   );
 }
