@@ -3,14 +3,22 @@ import Image from 'next/image';
 
 function Partners() {
   return (
-    <div className="px-10 md:px-20 mx-auto py-10">
+    <div className="px-10 md:px-20 mx-auto py-12">
       <div className="mx-auto">
-        <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">Our Partners</h2>
+        <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">Technical Sponsors</h2>
         <p className="mt-6 text-lg leading-8 text-center text-gray-primary">
           Meet the stronghold behind this great journey.
         </p>
       </div>
-      <div className="flex flex-col">
+      <div className='w-full py-8 flex flex-col items-center md:flex-row md:justify-around'>
+        <div>
+          <img unoptimized src="/img/uom_logo.png" alt="partner" className="w-auto h-40" />
+        </div>
+        <div>
+          <img unoptimized src="/img/logo.png" alt="partner" className="w-auto h-40" />
+        </div>
+      </div>
+      {/* <div className="flex flex-col">
         <div className="flex flex-col md:flex-row justify-between my-10 md:my-20">
 
           <div className="flex md:basis-2/5 flex-col items-center space-y-2 px-3 mb-10 md:mb-0">
@@ -45,7 +53,7 @@ function Partners() {
           </div>
           <div className='text-lg font-semibold text-black text-center'>Silver Partners</div>
         </div>
-      </div>
+      </div> */}
     </div>
 
 
