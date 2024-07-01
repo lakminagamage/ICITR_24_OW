@@ -1,4 +1,6 @@
 import { useRouter } from 'next/router';
+import Spinner from '@/components/Spinner';
+import { useState } from 'react';
 
 const navigation = {
   
@@ -56,13 +58,14 @@ const navigation = {
 }
 
 export default function Footer() {
+  const [loading, setLoading] = useState(false);
   const router = useRouter()
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer className="bg-white border-t-2" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-24 lg:px-8 lg:pt-12">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
@@ -71,7 +74,13 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.resources.map((item) => (
                     <li key={item.name}>
-                      <p onClick={() => {router.push(item.href)}} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                      <p onClick={() => {
+                        setLoading(true)
+                        setTimeout(() => {
+                          setLoading(false)
+                        }, 400);
+
+                        router.push(item.href)}} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                         {item.name}
                       </p>
                     </li>
@@ -150,6 +159,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
+      <Spinner isVisible={loading} />
     </footer>
   )
 }

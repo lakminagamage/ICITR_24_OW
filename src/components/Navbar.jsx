@@ -3,10 +3,11 @@ import { Dialog } from "@headlessui/react";
 import { FaBars, FaWindowClose } from "react-icons/fa";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Spinner from "@/components/Spinner";
 
 const navigation = [
   { name: "HOME", href: "/" },
-  { name: "SUBMIT PAPER", href: "/paperSubmission" },
+  { name: "FOR AUTHORS", href: "/paperSubmission" },
   { name: "PAST ABSRACTS", href: "/pastAbstracts" },
   { name: "COMMITTEE", href: "/committee" },
   { name: "CONTACT US", href: "/contacts" },
@@ -16,6 +17,7 @@ function Navbar() {
   const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,24 +34,32 @@ function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-40 bg-white ${
-        isScrolled ? "bg-opacity-100" : "bg-opacity-0"
-      }`}
+        isScrolled ? "bg-opacity-100" : "bg-opacity-50"
+      } backdrop-blur-md`}
     >
       <nav
         className="flex items-center justify-between px-6 py-3 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <p href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">EC-UOM</span>
             <Image
               className=""
               src="/img/logo.png"
-              width={200}
-              height={100}
+              width={100}
+              height={50}
               alt=""
+              onClick={() => {
+                setLoading(true);
+                setTimeout(() => {
+                  setLoading(false);
+                }, 400);
+
+                router.push("/");
+              }}
             />
-          </a>
+          </p>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -65,8 +75,14 @@ function Navbar() {
           {navigation.map((item) => (
             <a
               key={item.name}
-              onClick={() => router.push(item.href)}
-              className="text-sm font-semibold leading-6 text-blue-dark hover:text-blue-primary transition-colors duration-300 ease-in-out"
+              onClick={() => {
+                setLoading(true);
+                setTimeout(() => {
+                  setLoading(false);
+                }, 400);
+                router.push(item.href);
+              }}
+              className="text-sm font-semibold leading-6 text-blue-dark hover:text-blue-primary transition-colors duration-300 ease-in-out cursor-pointer"
             >
               {item.name}
             </a>
@@ -118,6 +134,7 @@ function Navbar() {
           </div>
         </Dialog.Panel>
       </Dialog>
+      <Spinner isVisible={loading} />
     </header>
   );
 }

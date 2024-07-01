@@ -30,7 +30,7 @@ export default function Clock() {
   useEffect(() => {
     const countdown = setInterval(() => {
       const currentDate = new Date();
-      const targetDate = new Date('2024-12-07T08:59:59'); // Replace with your target date and time
+      const targetDate = new Date('2024-12-05T08:59:59'); // Replace with your target date and time
 
       const timeDifference = targetDate - currentDate;
 
