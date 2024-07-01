@@ -144,7 +144,7 @@ function ContactForm() {
             <div className="mt-5">
               <button
                 type="submit"
-                className="block w-1/3 rounded-md bg-blue-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="block w-1/3 rounded-md bg-blue-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Send Message
               </button>
