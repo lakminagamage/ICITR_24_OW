@@ -4,7 +4,7 @@ function PersonCard({ name, description, image, scholarLink, linkedinLink }) {
       <img
         src={`/img/committee/${image}.jpg`}
         alt=""
-        className="w-24 h-24 rounded-lg object-cover"
+        className="w-24 h-24 rounded-full border-2 border-gray-400 object-cover"
       />
       <div className="ml-3">
         <h3 className="text-md font-bold text-black-primary">{name}</h3>
