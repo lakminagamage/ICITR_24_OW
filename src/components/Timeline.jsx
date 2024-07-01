@@ -5,38 +5,37 @@ function Timeline() {
     {
       date: "15th November",
       title: "Full Paper Submission",
-      description:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      description: "",
     },
     {
-      date: "15th November",
+      date: "30th October",
       title: "Notification of Acceptance of Full Papers",
-      description:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      description: "",
     },
     {
-      date: "15th November",
+      date: "30th October",
       title: "Registration Open",
-      description:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      description: "",
     },
     {
-      date: "15th November",
+      date: "10th November",
       title: "Camera Ready Submission",
-      description:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      description: "",
     },
     {
       date: "15th November",
-      title: "Registration Close for Authors",
-      description:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      title: "Registration Close",
+      description: "",
     },
     {
       date: "15th November",
       title: "Registration Close for Participants",
-      description:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      description: "",
+    },
+    {
+      date: "5th December",
+      title: "Pre-conference Workshop",
+      description: "",
     },
   ];
   return (
@@ -80,7 +79,7 @@ function Timeline() {
             </div>
             <div className="flex flex-col justify-center px-4">
               <h3 className="text-md font-semibold text-gray-primary">
-                15th November
+                6th December
               </h3>
               <time className="block mb-2 text-xl font-bold leading-none text-black-primary mt-2">
                 Conference Date

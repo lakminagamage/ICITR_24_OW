@@ -46,39 +46,40 @@ function Tracks() {
             ICITR 2024 Tracks
           </h2>
           <p className="flex justify-center mt-2 text-lg leading-8 text-center text-gray-primary">
-            Explore and present your expertise in these key fields
+            The ICITR 2024 welcomes full papers from the below themes, but they
+            are not restricted to the following
           </p>
         </div>
         <div className="flex flex-wrap justify-center items-start mt-5">
           {tracks.map((track) => (
-            <article key={track.id} className="relative isolate flex flex-col gap-10 lg:flex-row mt-16">
-            <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink- ">
-              <img
-                src={`/img/tracks/${track.id}.jpg`}
-                className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
-                
-              />
-              <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-            </div>
-            <div className="flex flex-col justify-center">
-              
-              <div className="group relative max-w-xl ">
-                <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <p>
-                    <span className="absolute inset-0" />
-                    {track.title}
-                  </p>
-                </h3>
-                <p className="mt-5 text-sm leading-6 text-gray-800">{track.description}</p>
+            <article
+              key={track.id}
+              className="relative isolate flex flex-col gap-x-10 gap-y-6 lg:flex-row mt-4"
+            >
+              <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink- ">
+                <img
+                  src={`/img/tracks/${track.id}.jpg`}
+                  className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+                />
+                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
               </div>
-              <div className="mt-6 flex border-t border-gray-900/5 pt-6">
-                <div className="relative flex items-center gap-x-4">
-                  
-                  
+              <div className="flex flex-col justify-center">
+                <div className="group relative max-w-xl ">
+                  <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 duration-300 transition-all ease-in-out">
+                    <p>
+                      <span className="absolute inset-0" />
+                      {track.title}
+                    </p>
+                  </h3>
+                  <p className="mt-5 text-sm leading-6 text-gray-800">
+                    {track.description}
+                  </p>
+                </div>
+                <div className="mt-6 flex border-t border-gray-900/5 pt-6">
+                  <div className="relative flex items-center gap-x-4"></div>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
           ))}
         </div>
       </div>
