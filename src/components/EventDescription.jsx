@@ -13,36 +13,21 @@ export default function EventDescription() {
 
       {/* Description 01*/}
       <div className='flex flex-col md:flex-row md:items-center mb-10'>
-        <div className='font-bold text-black md:basis-5/12 text-2xl mb-5 md:mb-0'>
+        <div className='font-bold text-black text-center text-2xl mb-5 md:text-left md:mb-0 md:basis-5/12'>
           <span className='text-6xl'>9th</span> International Conference on Information Technology Research
         </div>
         <div className='text-gray-500 md:basis-8/12 text-lg text-justify'>
-          The 9th ICITR (2024) is scheduled for December 2024 at the University of Moratuwa's Faculty of Information Technology in Sri Lanka. The conference aims to foster ICT research and academic collaboration. Continuing the tradition established by the Information Technology Research Unit (ITRU), ICITR 2024 offers a forum for groundbreaking IT research.
+          The 9th International Conference on Information Technology Research (ICITR 2024) will be held from December 5th to 6th, 2024, at the Faculty of Information Technology, University of Moratuwa, Sri Lanka. The main purpose of the ICITR conference is to promote research in ICT and scientific exchange among researchers and scholars. Following the past conference and sessions that were organized by the Information Technology Research Unit (ITRU), ICITR 2024 too provides a platform for original and cutting-edge research in the field of Information Technology. ICITR conferences held from 2018 to 2023 were successfully conducted with a technical co-sponsorship by IEEE Sri Lanka.  ICITR 2024 will have diverse technical tracks, invited  speakers, and workshops. All are selected according to the highest reviewing standards. ICITR 2024 welcomes submissions on diversified areas of the latest communications advancements worldwide. This conference is designed to maximize the feasibility and satisfaction of participants at all levels.
         </div>
       </div>
 
       {/* Description 02*/}
       <div className='flex flex-col-reverse md:flex-row items-center mb-10'>
-        <div className='text-gray-500 md:basis-8/12 text-lg text-justify'>
-          Since 2018, the annual ICITR conferences have been successfully held with IEEE Sri Lanka's technical co-sponsorship. ICITR 2024 will feature a variety of technical sessions, keynote speakers, and workshops, all selected based on stringent review criteria. The conference invites submissions across a wide range of topics in the field of modern communication technology, ensuring an enriching experience for participants at every level.
-        </div>
-
-        <div className='md:basis-4/12 flex justify-center mb-5 md:mb-0'>
-          <img src="/img/eventDescription/IEEElogo.png" className='w-3/4' />
-        </div>
-      </div>
-
-      {/* Description 03*/}
-      <div className='flex flex-col md:flex-row items-center mb-10'>
-        <div className='md:basis-5/12 flex flex-col items-center mb-5 md:mb-0'>
-            <img src="/img/eventDescription/IEEExplorelogo.png" className='w-3/5'/>
-            <img src="/img/eventDescription/scopuslogo.png" className='w-3/5'/>
-        </div>
-        <div className='text-gray-500 md:basis-8/12 text-lg text-justify'>
-          ICITR 2024 is calling for paper submissions from authors. These full papers will undergo a blind review, assessing them for originality, academic rigour, relevance/significance, innovation, thoroughness, coherence, and clarity of presentation.
+        <div className='text-gray-500 text-lg text-justify'>
+          The authors are invited to submit their papers to ICITR 2024. Full paper submissions will go through a blind review process to check for originality, scientific quality, fitness/significance, novelty, completeness, consistency, and presentation.
           <br />
           <br />
-          All papers accepted and presented at the conference will be submitted to the IEEE Xplore digital library, which is indexed by SCOPUS.
+          All the accepted and presented papers will be submitted to IEEE Xplore digital library which is indexed by SCOPUS.
         </div>
       </div>
     </div>
