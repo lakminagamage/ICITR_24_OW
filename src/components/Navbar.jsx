@@ -2,18 +2,22 @@ import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import { FaBars, FaWindowClose } from "react-icons/fa";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import Spinner from '@/components/Spinner';
 
 const navigation = [
-  { name: "HOME", href: "#" },
-  { name: "PUBLISH PAPER", href: "#" },
-  { name: "PAST ABSRACTS", href: "#" },
-  { name: "COMMITTEE", href: "#" },
-  { name: "CONTACT US", href: "#" },
+  { name: "HOME", href: "/" },
+  { name: "SUBMIT PAPER", href: "/paperSubmission" },
+  { name: "PAST ABSRACTS", href: "/pastAbstracts" },
+  { name: "COMMITTEE", href: "/committee" },
+  { name: "CONTACT US", href: "/contacts" },
 ];
 
 function Navbar() {
+  const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +33,7 @@ function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 bg-white ${
+      className={`fixed inset-x-0 top-0 z-40 bg-white ${
         isScrolled ? "bg-opacity-100" : "bg-opacity-0"
       }`}
     >
@@ -38,7 +42,7 @@ function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <p href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">EC-UOM</span>
             <Image
               className=""
@@ -46,8 +50,17 @@ function Navbar() {
               width={200}
               height={100}
               alt=""
+              onClick={() => {
+                setLoading(true)
+                setTimeout(() => {
+                  setLoading(false)
+                }, 400)
+
+                router.push("/")
+              }
+              }
             />
-          </a>
+          </p>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -63,7 +76,12 @@ function Navbar() {
           {navigation.map((item) => (
             <a
               key={item.name}
-              href={item.href}
+              onClick={() => {
+                setLoading(true)
+                setTimeout(() => {
+                  setLoading(false)
+                }, 400)
+                router.push(item.href)}}
               className="text-sm font-semibold leading-6 text-blue-dark hover:text-blue-primary transition-colors duration-300 ease-in-out"
             >
               {item.name}
@@ -77,8 +95,8 @@ function Navbar() {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 z-40" />
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -116,6 +134,7 @@ function Navbar() {
           </div>
         </Dialog.Panel>
       </Dialog>
+      <Spinner isVisible={loading} />
     </header>
   );
 }
