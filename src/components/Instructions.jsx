@@ -1,34 +1,8 @@
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { Disclosure, Transition } from "@headlessui/react";
+import faqs from "../data/faq";
 
 function Instructions() {
-  const faqs = [
-    {
-      question: "Full paper submission and payment details",
-      answer:
-        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-    },
-    {
-      question: "Full paper submission and payment details",
-      answer: `As creators of the work, authors have a number of responsibilities when submitting their paper or manuscript to ICITR. They must warrant:
-        That the papers they submit are their own original work.
-        That no portion of their paper (including, but not limited to, graphics and figures) has been previously published unless written consent from the previous publisher has been obtained prior to submission.
-        That the paper is not currently under consideration for publication elsewhere.
-        That the authors listed on the paper accurately reflect those who actually did the work and contributed to the paper in a meaningful way.
-        That they have identified and acknowledged all sources used in the creation of their paper or manuscript, including any graphics, images, tables, and figures, and also including any persons who do not meet the criteria for authorship.`,
-    },
-    {
-      question: "Full paper submission and payment details",
-      answer:
-        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-    },
-    {
-      question: "Full paper submission and payment details",
-      answer:
-        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-    },
-  ];
-
   return (
     <div className="w-full pt-16 pb-12 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
@@ -37,13 +11,14 @@ function Instructions() {
             Instructions on Submissions
           </h2>
           <p className="flex justify-center mt-2 text-lg leading-8 text-center text-gray-primary">
-            Make your papers much more stronger with these tips
+            * Please note that literature surveys/review papers will not be
+            accepted. All papers submitted will be checked for plagiarism
           </p>
         </div>
         <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
           <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
-            {faqs.map((faq) => (
-              <Disclosure as="div" key={faq.question} className="pt-6">
+            {faqs.map((faq, index) => (
+              <Disclosure as="div" key={index} className="pt-6">
                 {({ open }) => (
                   <>
                     <dt>
@@ -75,9 +50,12 @@ function Instructions() {
                       leaveTo="transform h-0"
                     >
                       <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        <p className="text-base leading-7 text-gray-600">
+                        <div
+                          className="text-base leading-7 text-gray-600"
+                          style={{ whiteSpace: "pre-wrap" }}
+                        >
                           {faq.answer}
-                        </p>
+                        </div>
                       </Disclosure.Panel>
                     </Transition>
                   </>
