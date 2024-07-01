@@ -4,128 +4,335 @@ import CommitteeGrid from "@/components/CommitteeGrid";
 
 export default function Committee() {
   const coChairs = [
-    {
-      name: "John Doe",
-      description: "ISILC, Victoria University, Melbourne, Australia",
-      image: "1",
-    },
-    {
-      name: "Jane Doe",
-      description:
-        "University of Applied Sciences and Arts of Southern Switzerland (Italian: Scuola universitaria professionale della Svizzera italiana, SUPSI), Switzerland",
-      image: "2",
-    },
+    
   ];
 
   const intAdvCom = [
     {
-      name: "John Doe",
+      name: "Prof. Sardar MN Islam",
       description: "ISILC, Victoria University, Melbourne, Australia",
-      image: "1",
+      image: "sard",
     },
     {
-      name: "Jane Doe",
+      name: "Prof. Chan-Yun Yang",
       description:
-        "University of Applied Sciences and Arts of Southern Switzerland (Italian: Scuola universitaria professionale della Svizzera italiana, SUPSI), Switzerland",
-      image: "2",
+        "National Taipei University, Taiwan",
+      image: "chan",
     },
     {
-      name: "John Doe",
-      description: "ISILC, Victoria University, Melbourne, Australia",
-      image: "1",
+      name: "C Premachandra",
+      description: "Shibaura Institute of Technology, Japan",
+      image: "cpre",
     },
     {
-      name: "Jane Doe",
+      name: "Prof. Joshi Manohar",
       description:
-        "University of Applied Sciences and Arts of Southern Switzerland (Italian: Scuola universitaria professionale della Svizzera italiana, SUPSI), Switzerland",
-      image: "2",
+        "Presidency University, India",
+      image: "josh",
     },
   ];
 
   const progChairs = [
     {
-      name: "John Doe",
-      description: "ISILC, Victoria University, Melbourne, Australia",
-      image: "1",
+      name: "BH Sudantha",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "bhsu",
     },
     {
-      name: "Jane Doe",
+      name: "ITS Piyathilake",
       description:
-        "University of Applied Sciences and Arts of Southern Switzerland (Italian: Scuola universitaria professionale della Svizzera italiana, SUPSI), Switzerland",
-      image: "2",
+        "University of Moratuwa, Sri Lanka",
+      image: "itsp",
     },
   ];
 
   const techProgCommChairs = [
     {
-      name: "John Doe",
-      description: "ISILC, Victoria University, Melbourne, Australia",
-      image: "1",
+      name: "C Premachandra",
+      description: "Shibaura Institute of Technology, Japan",
+      image: "cpre",
     },
     {
-      name: "Jane Doe",
+      name: "R Gopura",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "rgop",
+    },
+    {
+      name: "P.K.W. Abeygunawardhana",
+      description: "Sri Lanka Institute of Information Technology, Sri Lanka",
+      image: "pkwa",
+    },
+    {
+      name: "S Ahangama",
       description:
-        "University of Applied Sciences and Arts of Southern Switzerland (Italian: Scuola universitaria professionale della Svizzera italiana, SUPSI), Switzerland",
-      image: "2",
+        "University of Moratuwa, Sri Lanka",
+      image: "saha",
     },
     {
-      name: "John Doe",
-      description: "ISILC, Victoria University, Melbourne, Australia",
-      image: "1",
+      name: "KPN Jayasena",
+      description: "University of Sabaragamuwa, Sri Lanka",
+      image: "kpnj",
     },
     {
-      name: "Jane Doe",
+      name: "SC Premaratne",
       description:
-        "University of Applied Sciences and Arts of Southern Switzerland (Italian: Scuola universitaria professionale della Svizzera italiana, SUPSI), Switzerland",
-      image: "2",
+        "University of Moratuwa, Sri Lanka",
+      image: "scpr",
     },
     {
-      name: "John Doe",
-      description: "ISILC, Victoria University, Melbourne, Australia",
-      image: "1",
+      name: "L Ranathunga",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "lran",
     },
     {
-      name: "Jane Doe",
+      name: "CP Wijesiriwardana",
       description:
-        "University of Applied Sciences and Arts of Southern Switzerland (Italian: Scuola universitaria professionale della Svizzera italiana, SUPSI), Switzerland",
-      image: "2",
+        "University of Moratuwa, Sri Lanka",
+      image: "cpwi",
     },
     {
-      name: "John Doe",
-      description: "ISILC, Victoria University, Melbourne, Australia",
-      image: "1",
-    },
-    {
-      name: "Jane Doe",
+      name: "ATP Silva",
       description:
-        "University of Applied Sciences and Arts of Southern Switzerland (Italian: Scuola universitaria professionale della Svizzera italiana, SUPSI), Switzerland",
-      image: "2",
-    },
+        "University of Moratuwa, Sri Lanka",
+      image: "atps",
+    }
   ];
 
   const indLiaChairs = [
     {
-      name: "John Doe",
-      description: "ISILC, Victoria University, Melbourne, Australia",
-      image: "1",
+      name: "KSD Fernando",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "ksdf",
     },
     {
-      name: "Jane Doe",
-      description:
-        "University of Applied Sciences and Arts of Southern Switzerland (Italian: Scuola universitaria professionale della Svizzera italiana, SUPSI), Switzerland",
-      image: "2",
+      name: "CP Wijesiriwardana",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "cpwi",
     },
     {
-      name: "John Doe",
-      description: "ISILC, Victoria University, Melbourne, Australia",
-      image: "1",
+      name: "ALARR Thanuja",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "alar",
     },
     {
-      name: "Jane Doe",
-      description:
-        "University of Applied Sciences and Arts of Southern Switzerland (Italian: Scuola universitaria professionale della Svizzera italiana, SUPSI), Switzerland",
-      image: "2",
+      name: "BNNT Batagoda",
+      description: "University of Moratuwa",
+      image: "bnnt",
     },
+    {
+      name: "PGS Upeksha",
+      description: "University of Moratuwa",
+      image: "pgsu",
+    },
+  ];
+
+  const confSec = [
+    {
+      name: "PD Talagala",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "pdta",
+    }
+  ];
+
+  const awardChairs = [
+    {
+      name: "TC Sandanayake",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "tcsa",
+    },
+    {
+      name: "RGC Upeksha",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "rgcu",
+    }
+  ];
+
+  const financeChairs = [
+    {
+      name: "MB Mufitha",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mbmu",
+    }
+  ];
+
+  const workshopChairs = [
+    {
+      name: "S Ahangama",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "saha",
+    },
+    {
+      name: "TM Thanthriwatte",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "tmth",
+    },
+    {
+      name: "KMSJ Kumarasinghe",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "kmsj",
+    },
+    {
+      name: "MWAMP Muthukuda",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mwam",
+    },
+    {
+      name: "MAN Perera",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "manp",
+    },
+    {
+      name: "RGC Upeksha",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "rgcu",
+    },
+  ];
+
+  const localOrgChairs = [
+    {
+      name: "I Karunarathna",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "ikar",
+    },
+    {
+      name: "ATP Silva",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "atps",
+    },
+    {
+      name: "SC Premaratne",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "scpr",
+    },
+    {
+      name: "MFM Firdhous",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mfmf",
+    },
+    {
+      name: "CP Wijesiriwardana",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "cpwi",
+    },
+    {
+      name: "CRJ Amalraj",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "crja",
+    },
+    {
+      name: "BLD Seneviratne",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "blds",
+    },
+    {
+      name: "WASN Wijetunge",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "wasn",
+    },
+    {
+      name: "KADT Kulawansa",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "kadt",
+    }
+  ];
+
+  const localOC = [
+    {
+      name: "TS Nanayakkara",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "tsna",
+    },
+    {
+      name: "MTU Sigera",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mtus",
+    },
+    {
+      name: "KBG Samantha",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "kbgs",
+    },
+    {
+      name: "C De Alwis",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "cdea",
+    },
+    {
+      name: "KAS Gunasekara",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "kasg",
+    },
+    {
+      name: "M.M. Udawaththa",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mmud",
+    }
+  ];
+
+  const studentOC = [
+    {
+      name: "To Be announced",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mwam",
+    },
+    {
+      name: "To Be announced",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mwam",
+    },
+    {
+      name: "To Be announced",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mwam",
+    },
+    {
+      name: "To Be announced",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mwam",
+    },
+    {
+      name: "To Be announced",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mwam",
+    },
+    {
+      name: "To Be announced",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "mwam",
+    }
+  ];
+
+  const pubPRChairs = [
+    {
+      name: "TC Sandanayake",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "tcsa",
+    },
+
+    {
+      name: "PGS Upeksha",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "pgsu",
+    },
+
+    {
+      name: "BNNT Batagoda",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "bnnt",
+    }
+  ];
+
+  const publicationChairs = [
+    {
+      name: "GU Ganegoda",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "guga",
+    },
+    {
+      name: "ALARR Thanuja",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "alar",
+    }
   ];
 
   return (
@@ -134,20 +341,76 @@ export default function Committee() {
         subtitle={"Meet Our Masterminds<br/>Behind The Success of 9 Years"}
         buttonsVisible={true}
       />
+
       <div className="container mx-auto py-12">
-        <CommitteeGrid people={coChairs} title={"Honorary Co-Chairs"} />
+        {/* <CommitteeGrid 
+          people={coChairs} 
+          title={"Honorary Co-Chairs"} 
+        /> */}
+
         <CommitteeGrid
           people={intAdvCom}
           title={"International Advisory Committee"}
         />
-        <CommitteeGrid people={progChairs} title={"Program Chairs"} />
+
+        <CommitteeGrid 
+          people={progChairs} 
+          title={"General Co-Chairs"} 
+        />
+
+        <CommitteeGrid
+          people={confSec}
+          title={"Conference Secretary"}
+        />
+
         <CommitteeGrid
           people={techProgCommChairs}
           title={"Technical Program Committee Chairs"}
         />
+
         <CommitteeGrid
           people={indLiaChairs}
           title={"Industry Liaison Chairs"}
+        />
+
+        <CommitteeGrid
+          people={pubPRChairs}
+          title={"Publicity and Public Relations Chairs"}
+        />
+
+        <CommitteeGrid
+          people={awardChairs}
+          title={"Award Chairs"}
+        />
+
+        <CommitteeGrid
+          people={financeChairs}
+          title={"Finance Chairs"}
+        />
+
+        <CommitteeGrid
+          people={publicationChairs}
+          title={"Finance Chairs"}
+        />
+
+        <CommitteeGrid
+          people={workshopChairs}
+          title={"Workshops & Tutorial Organizing Committee"}
+        />
+
+        <CommitteeGrid
+          people={localOrgChairs}
+          title={"Local Organizing Chairs"}
+        />
+
+        <CommitteeGrid
+          people={localOC}
+          title={"Local Organizing Committee"}
+        />
+
+        <CommitteeGrid
+          people={studentOC}
+          title={"Student Organizing Committee"}
         />
       </div>
     </div>
