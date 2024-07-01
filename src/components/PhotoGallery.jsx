@@ -67,12 +67,9 @@ export default function PhotoGallery() {
         </div>
         <div className='basis-1/3 md:ml-8 flex items-center my-8'>
           <div className='flex flex-col items-center'>
-            <div className='font-bold text-4xl text-blue-primary mb-5'>Past Conference</div>
+            <div className='font-bold text-4xl text-blue-primary mb-5'>Photo Gallery</div>
             <div className='text-gray-500 text-justify'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu suscipit felis, sit amet rutrum ligula. Etiam nibh nulla, commodo vel ligula non, euismod tristique ante. Praesent malesuada felis tempor viverra efficitur.
-              <br />
-              <br />
-              Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse id vulputate diam. Suspendisse aliquam sed metus ac vestibulum. Integer sed porttitor turpis, sed dignissim libero. Vivamus mattis erat a dictum varius. Ut eget faucibus nisl. Donec mauris nisl.
+              Explore our photo gallery to relive the vibrant moments from previous ICITR conferences. Witness the engaging keynote sessions, dynamic technical presentations, and collaborative workshops that have defined our past events. Each photo captures the spirit of innovation, academic excellence, and networking that ICITR is renowned for. From insightful discussions to memorable social interactions, our gallery showcases the essence of the ICITR experience, inspiring anticipation for the upcoming ICITR 2024.
             </div>
           </div>
         </div>

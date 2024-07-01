@@ -6,8 +6,8 @@ import { useRouter } from "next/router";
 
 const navigation = [
   { name: "HOME", href: "/" },
-  { name: "SUBMIT PAPER", href: "/paperSubmission" },
-  { name: "PAST ABSRACTS", href: "/pastAbstracts" },
+  { name: "FOR AUTHORS", href: "/paperSubmission" },
+  { name: "PAST ABSTRACTS", href: "/pastAbstracts" },
   { name: "COMMITTEE", href: "/committee" },
   { name: "CONTACT US", href: "/contacts" },
 ];
@@ -32,7 +32,7 @@ function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-40 bg-white ${
-        isScrolled ? "bg-opacity-100" : "bg-opacity-0"
+        "bg-opacity-100"
       }`}
     >
       <nav

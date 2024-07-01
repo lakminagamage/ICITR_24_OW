@@ -51,15 +51,16 @@ const people = [
   
   export default function Team() {
     return (
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-white py-8 sm:py-12">
         <div className="mx-auto px-6 lg:px-8">
           <div className="mx-auto">
             <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">Keynote Speakers</h2>
             <p className="mt-6 text-lg leading-8 text-center text-gray-primary">
-            Learn from the experts on the cutting-edge technologies, at the most renowned organizations.
+            {/* Learn from the experts on the cutting-edge technologies, at the most renowned organizations. */}
+            Coming Soon
             </p>
           </div>
-          <ul
+          {/* <ul
             role="list"
             className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
           >
@@ -92,7 +93,7 @@ const people = [
                 </ul>
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </div>
     )
