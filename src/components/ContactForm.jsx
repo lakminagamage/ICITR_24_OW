@@ -1,6 +1,5 @@
 import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
 
 const MyMapComponent = (props) => (
   <iframe
