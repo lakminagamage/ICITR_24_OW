@@ -1,5 +1,7 @@
 import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MyMapComponent = (props) => (
   <iframe
@@ -31,9 +33,9 @@ const handleSubmit = async (e) => {
     )
     .then((response) => {
       if (response.status === 200) {
-        alert("Message sent successfully");
+        toast.success("Message sent successfully");
       } else {
-        alert("Failed to send message");
+        toast.error("Failed to send message");
       }
     })
     .catch((error) => {
@@ -144,7 +146,7 @@ function ContactForm() {
             <div className="mt-5">
               <button
                 type="submit"
-                className="block w-1/3 rounded-md bg-blue-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                className="block w-1/3 rounded-md bg-blue-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
                 Send Message
               </button>
@@ -176,6 +178,17 @@ function ContactForm() {
           </div>
         </div>
       </div>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }
