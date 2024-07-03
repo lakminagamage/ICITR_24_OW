@@ -43,7 +43,7 @@ const handleSubmit = async (e) => {
       console.log(process.env.NEXT_PUBLIC_SERVICE_ID);
       console.log(process.env.NEXT_PUBLIC_TEMPLATE_ID);
       console.log(process.env.NEXT_PUBLIC_USER_ID);
-      alert("Failed to send message");
+      toast.error("Failed to send message");
     });
 };
 
