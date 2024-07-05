@@ -6,7 +6,7 @@ export default function EventDescription() {
       {/* Title */}
       <div className='flex items-center mb-12'>
         <div className='font-bold text-blue-primary text-center md:text-left mr-10 text-xl'>
-          The Next Evolution In Digital Transformation
+          Harnessing the Potential of Information Technology
         </div>
         <div className='bg-blue-primary hidden md:block h-2 grow'></div>
       </div>

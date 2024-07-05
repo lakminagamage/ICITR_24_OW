@@ -15,7 +15,8 @@ const navigation = {
   ],
   institute: [
     { name: 'University', href: 'https://uom.lk' },
-    { name: 'Faculty of IT', href: 'https://uom.lk/itfac' }
+    { name: 'Faculty of IT', href: 'https://uom.lk/itfac' },
+    { name: 'IT Research Unit', href: 'https://uom.lk/itfac/research/research-unit' }
   ],
   social: [
     {
