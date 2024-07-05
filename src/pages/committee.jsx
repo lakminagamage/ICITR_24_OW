@@ -95,7 +95,12 @@ export default function Committee() {
       description:
         "University of Moratuwa, Sri Lanka",
       image: "atps",
-    }
+    },
+    {
+      name: "TM Thanthriwatte",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "tmth",
+    },
   ];
 
   const indLiaChairs = [
@@ -160,11 +165,6 @@ export default function Committee() {
       name: "S Ahangama",
       description: "University of Moratuwa, Sri Lanka",
       image: "saha",
-    },
-    {
-      name: "TM Thanthriwatte",
-      description: "University of Moratuwa, Sri Lanka",
-      image: "tmth",
     },
     {
       name: "KMSJ Kumarasinghe",
@@ -236,38 +236,38 @@ export default function Committee() {
     }
   ];
 
-  const localOC = [
-    {
-      name: "TS Nanayakkara",
-      description: "University of Moratuwa, Sri Lanka",
-      image: "tsna",
-    },
-    {
-      name: "MTU Sigera",
-      description: "University of Moratuwa, Sri Lanka",
-      image: "mtus",
-    },
-    {
-      name: "KBG Samantha",
-      description: "University of Moratuwa, Sri Lanka",
-      image: "kbgs",
-    },
-    {
-      name: "C De Alwis",
-      description: "University of Moratuwa, Sri Lanka",
-      image: "cdea",
-    },
-    {
-      name: "KAS Gunasekara",
-      description: "University of Moratuwa, Sri Lanka",
-      image: "kasg",
-    },
-    {
-      name: "M.M. Udawaththa",
-      description: "University of Moratuwa, Sri Lanka",
-      image: "mmud",
-    }
-  ];
+  // const localOC = [
+  //   {
+  //     name: "TS Nanayakkara",
+  //     description: "University of Moratuwa, Sri Lanka",
+  //     image: "tsna",
+  //   },
+  //   {
+  //     name: "MTU Sigera",
+  //     description: "University of Moratuwa, Sri Lanka",
+  //     image: "mtus",
+  //   },
+  //   {
+  //     name: "KBG Samantha",
+  //     description: "University of Moratuwa, Sri Lanka",
+  //     image: "kbgs",
+  //   },
+  //   {
+  //     name: "C De Alwis",
+  //     description: "University of Moratuwa, Sri Lanka",
+  //     image: "cdea",
+  //   },
+  //   {
+  //     name: "KAS Gunasekara",
+  //     description: "University of Moratuwa, Sri Lanka",
+  //     image: "kasg",
+  //   },
+  //   {
+  //     name: "M.M. Udawaththa",
+  //     description: "University of Moratuwa, Sri Lanka",
+  //     image: "mmud",
+  //   }
+  // ];
 
   const studentOC = [
     {
@@ -385,7 +385,7 @@ export default function Committee() {
 
         <CommitteeGrid
           people={financeChairs}
-          title={"Finance Chairs"}
+          title={"Publication Chairs"}
         />
 
         <CommitteeGrid
@@ -403,10 +403,10 @@ export default function Committee() {
           title={"Local Organizing Chairs"}
         />
 
-        <CommitteeGrid
+        {/* <CommitteeGrid
           people={localOC}
           title={"Local Organizing Committee"}
-        />
+        /> */}
 
         <CommitteeGrid
           people={studentOC}
