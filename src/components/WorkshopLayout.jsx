@@ -58,7 +58,7 @@ const posts = [
                       <p className="mt-3 text-base text-gray-500">{post.description}</p>
                     </a>
                   </div>
-                  <div className="mt-6 flex items-center">
+                  <div className="mt-6 flex items-center justify-center">
                     <div className="flex space-x-2 text-sm text-gray-700">
                       <time dateTime={post.datetime}>{post.date}</time>
                       <span aria-hidden="true">&middot;</span>
