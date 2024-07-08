@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import PersonCard from "@/components/PersonCard";
+import Footer from "@/components/Footer";
 import CommitteeGrid from "@/components/CommitteeGrid";
 
 export default function Committee() {
@@ -413,6 +413,7 @@ export default function Committee() {
           title={"Student Organizing Committee"}
         />
       </div>
+      <Footer />
     </div>
   );
 }
