@@ -25,10 +25,10 @@ const posts = [
   
   export default function WorkshopLayout() {
     return (
-      <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-20">
+      <div className="relative isolate bg-white px-6 pb-24 sm:pb-32 lg:px-20">
         <div className="mx-auto px-6 lg:px-8">
           <div className="mx-auto lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-blue-primary sm:text-4xl">Available Workshops</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-blue-primary sm:text-4xl">Upcoming Workshops</h2>
             
           </div>
           {/* hr */}
@@ -47,24 +47,26 @@ const posts = [
                 <div className="flex flex-1 flex-col justify-between bg-white p-6">
                   <div className="flex-1">
                     <p className="text-sm font-medium text-blue-600">
-                      <a href={post.author.href} className="hover:underline">
+                      <a href={post.author.href} className="hover:underline text-xl">
                         {post.author.name}
                       </a>
                       {post.author.role.split(',').map((role, index) => (
                       <p key={index} className="text-gray-600">{role.trim()}</p>
                     ))}
                     </p>
-                    <a href={post.href} className="block mt-2">
-                      <p className="mt-3 text-base text-gray-500">{post.description}</p>
-                    </a>
+                    
                   </div>
                   <div className="mt-6 flex items-center justify-center">
-                    <div className="flex space-x-2 text-sm text-gray-700">
+                    <div className="flex space-x-2 text-sm text-black">
                       <time dateTime={post.datetime}>{post.date}</time>
                       <span aria-hidden="true">&middot;</span>
                       <span>{post.time}</span>
                     </div>
                   </div>
+
+                  <a href={post.href} className="block mt-2">
+                      <p className="mt-3 text-gray-500 text-sm">{post.description}</p>
+                    </a>
                   
                 </div>
               </article>
