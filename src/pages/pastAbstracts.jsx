@@ -10,29 +10,33 @@ function pastAbstracts() {
       id: 1,
       title: "Abstracts of Proceedings 2023",
       year: "2023",
-      link: "https://heyzine.com/flip-book/296b52287b.html",
+      link: "https://heyzine.com/flip-book/89e75d659c.html",
       image: "/img/abstracts/1.png",
+      fileName: "/abstracts/abstract-of-the-proceeding-ICITR-2023.pdf",
     },
     {
       id: 2,
       title: "Abstracts of Proceedings 2022",
       year: "2022",
-      link: "https://heyzine.com/flip-book/296b52287b.html",
+      link: "https://heyzine.com/flip-book/60cffb31d6.html",
       image: "/img/abstracts/2.png",
+      fileName: "/abstracts/abstract-of-the-proceeding-ICITR-2022.pdf",
     },
     {
       id: 3,
       title: "Abstracts of Proceedings 2021",
       year: "2021",
-      link: "https://heyzine.com/flip-book/296b52287b.html",
+      link: "https://heyzine.com/flip-book/f2a19e1e70.html",
       image: "/img/abstracts/3.png",
+      fileName: "/abstracts/abstract-of-the-proceeding-ICITR-2021.pdf",
     },
     {
       id: 4,
       title: "Abstracts of Proceedings 2020",
       year: "2020",
-      link: "https://heyzine.com/flip-book/296b52287b.html",
+      link: "https://heyzine.com/flip-book/8d9307f0e9.html",
       image: "/img/abstracts/4.png",
+      fileName: "/abstracts/abstract-of-the-proceeding-ICITR-2020.pdf",
     },
   ];
 
@@ -130,6 +134,12 @@ function pastAbstracts() {
           <div className="w-full flex  flex-col justify-center items-center mt-12">
             <div className="text-2xl font-semibold text-blue-primary text-center">
               {selectedDocument.title}
+            </div>
+            {/* DOwnload Button */}
+            <div className="mt-4">
+              <a href={selectedDocument.fileName}>
+                <ButtonPrimary text="Download PDF" onClick={() => {}} />
+              </a>
             </div>
             <div
               style={{
