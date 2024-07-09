@@ -12,7 +12,7 @@ function pastAbstracts() {
       year: "2023",
       link: "https://heyzine.com/flip-book/89e75d659c.html",
       image: "/img/abstracts/1.png",
-      fileName: "/abstracts/abstract-of-the-proceeding-ICITR-2023.pdf",
+      fileName: "/abstracts/abstracts-of-the-proceeding-ICITR-2023.pdf",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ function pastAbstracts() {
       year: "2022",
       link: "https://heyzine.com/flip-book/60cffb31d6.html",
       image: "/img/abstracts/2.png",
-      fileName: "/abstracts/abstract-of-the-proceeding-ICITR-2022.pdf",
+      fileName: "/abstracts/abstracts-of-the-proceeding-ICITR-2022.pdf",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ function pastAbstracts() {
       year: "2021",
       link: "https://heyzine.com/flip-book/f2a19e1e70.html",
       image: "/img/abstracts/3.png",
-      fileName: "/abstracts/abstract-of-the-proceeding-ICITR-2021.pdf",
+      fileName: "/abstracts/abstracts-of-the-proceeding-ICITR-2021.pdf",
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ function pastAbstracts() {
       year: "2020",
       link: "https://heyzine.com/flip-book/8d9307f0e9.html",
       image: "/img/abstracts/4.png",
-      fileName: "/abstracts/abstract-of-the-proceeding-ICITR-2020.pdf",
+      fileName: "/abstracts/abstracts-of-the-proceeding-ICITR-2020.pdf",
     },
   ];
 
@@ -63,11 +63,14 @@ function pastAbstracts() {
                 Proceeding Statistics (Google Scholar)
               </div>
               <p className="text-base md:text-md text-gray-primary text-center md:text-left">
-                View the statistics of our proceedings on Google Scholar. Find out
-                how many times our papers have been cited, and much more.
+                View the statistics of our proceedings on Google Scholar. Find
+                out how many times our papers have been cited, and much more.
               </p>
               <div className="mt-2">
-                <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=Kx4NSJgAAAAJ&view_op=list_works&citft=1&citft=2&citft=3&email_for_op=sagarasns%40gmail.com&gmla=AJsN-F5HYPwB1itqB1mTDaXr4NMk0Z0IIzssH2bj6a9yh9_iIfYkxzKUx1wfkrW19_7q1_ZziuAUB1lueSc0khi7i92gu6JLBZxhli-I9J9YKVld-4wBSSQP8krAL6CvBxKFDPltIVomNv5-hoSyjyzJGukzUBieBR-OxHRiSxu2fphNybU91EBLumQn1rAIxaGvBUzhzHrTP1KkTpqDmSULzw1UPitKu9UYg873ahkfGKYBxMoWJ0UAgHQVqLpSoTHON6IKy2mB">
+                <a
+                  target="_blank"
+                  href="https://scholar.google.com/citations?hl=en&user=Kx4NSJgAAAAJ&view_op=list_works&citft=1&citft=2&citft=3&email_for_op=sagarasns%40gmail.com&gmla=AJsN-F5HYPwB1itqB1mTDaXr4NMk0Z0IIzssH2bj6a9yh9_iIfYkxzKUx1wfkrW19_7q1_ZziuAUB1lueSc0khi7i92gu6JLBZxhli-I9J9YKVld-4wBSSQP8krAL6CvBxKFDPltIVomNv5-hoSyjyzJGukzUBieBR-OxHRiSxu2fphNybU91EBLumQn1rAIxaGvBUzhzHrTP1KkTpqDmSULzw1UPitKu9UYg873ahkfGKYBxMoWJ0UAgHQVqLpSoTHON6IKy2mB"
+                >
                   <ButtonPrimary text="View Statistics" />
                 </a>
               </div>
@@ -80,30 +83,36 @@ function pastAbstracts() {
               />
             </div>
           </div>
-          <div className="w-full flex flex-col md:flex-row justify-between items-center md:space-x-8 mt-6">
+          <div className="w-full flex flex-col md:flex-row justify-between items-center md:space-x-8 mt-8">
             <div className="md:hidden mb-8">
-              <div className="w-16 mx-auto"/>
+              <div className="w-16 mx-auto" />
             </div>
             <div className="flex flex-col justify-center items-center md:items-start">
               <div className="text-xl md:text-2xl font-bold text-blue-primary text-center md:text-left">
                 Proceeding (IEEE Xplore Full-Text)
               </div>
               <p className="text-base md:text-md text-gray-primary text-center md:text-left">
-                View all our past proceedings on IEEE Xplore to access comprehensive information.
+                View all our past proceedings on IEEE Xplore to access
+                comprehensive information.
               </p>
               <div className="mt-2">
-                <a target="_blank" href="https://ieeexplore.ieee.org/xpl/conhome/1831604/all-proceedings">
+                <a
+                  target="_blank"
+                  href="https://ieeexplore.ieee.org/xpl/conhome/1831604/all-proceedings"
+                >
                   <ButtonPrimary text="View Proceeding" />
                 </a>
               </div>
             </div>
             <div className="hidden md:block">
-              <div className="w-48 md:w-24"/>
+              <img
+                src="/img/icons/ieee.png"
+                alt="Abstracts"
+                className="w-60 md:w-36"
+              />
             </div>
           </div>
         </div>
-
-
 
         <div className="w-full flex flex-wrap mt-8 justify-center items-center space-x-4 space-y-4">
           {abstracts.map((abstract) => (
