@@ -1,10 +1,14 @@
+import ButtonPrimary from "@/components/ButtonPrimary";
+
 const faqs = [
     {
         question: "Full paper submission",
         answer:
             (
                 <>
-                    <p>Authors are invited to submit original full papers of no more than six (6) pages, including results, figures, tables, and references. Authors can include up to two (2) additional pages at a cost to the authors of $250 per page (Rs. 85,000). Electronic submission in PDF format is required. Papers must be formatted in IEEE double-column format on A4 size paper. <br/>Authors must strictly follow the provided template. Final papers found to exceed page limits and or otherwise violate the instructions to authors will not be considered.</p>
+                    <p className="mb-2">Authors are invited to submit original full papers of no more than six (6) pages, including results, figures, tables, and references. Authors can include up to two (2) additional pages at a cost to the authors of $250 per page (Rs. 85,000). Electronic submission in PDF format is required. Papers must be formatted in IEEE double-column format on A4 size paper. <br/>Authors must strictly follow the provided template. Final papers found to exceed page limits and or otherwise violate the instructions to authors will not be considered.</p>
+                    <a href="https://www.ieee.org/conferences/publishing/templates.html
+">  <ButtonPrimary text="Get the IEEE Template"/></a>
                     
                 </>
             ),
