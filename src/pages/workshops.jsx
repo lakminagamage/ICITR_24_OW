@@ -1,7 +1,13 @@
+import Hero from "@/components/Hero";
+import WorkshopLayout from "@/components/WorkshopLayout";
+import Footer from "@/components/Footer";
+
 function workshops() {
     return (
-        <div>
-            Coming Soon
+        <div className="text-center">
+            <Hero subtitle="Join with Our Workshops" />
+            <WorkshopLayout/>
+            <Footer />
         </div>
     );
 }
