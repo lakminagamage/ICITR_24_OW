@@ -9,9 +9,9 @@ const MyMapComponent = (props) => (
     width="400"
     height="300"
     className="w-full h-full"
-    allowfullscreen=""
+    allowFullscreen=""
     loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
+    referrerPolicy="no-referrer-when-downgrade"
   ></iframe>
 );
 
