@@ -9,7 +9,7 @@ function speakers() {
       role: "Professor & HoD",
       university:
         "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
-      imageUrl: "img/speakers/joshi.png",
+      imageUrl: "img/speakers/profjoshi.jpg",
     },
   ];
   return (
