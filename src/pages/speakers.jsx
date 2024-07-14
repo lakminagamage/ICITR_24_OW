@@ -14,7 +14,7 @@ function speakers() {
   ];
   return (
     <div className="text-center bg-white">
-      <Hero subtitle="Recognized Group of Speakers" />
+      <Hero subtitle="Meet the Speakers of the Conference" />
       <div className="container px-2 md:mx-auto py-12">
         <div className="mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-blue-primary sm:text-4xl">
