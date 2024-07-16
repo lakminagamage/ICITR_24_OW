@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Partners() {
   return (
-    <div className="px-10 md:px-20 mx-auto mt-12 mb-16">
+    <div className="px-10 md:px-20 mx-auto mt-8 mb-16">
       <div className="mx-auto">
         <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">Technical Sponsors</h2>
         <p className="mt-6 text-lg leading-8 text-center text-gray-primary">

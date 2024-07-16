@@ -34,7 +34,7 @@ function speakers() {
                 <img
                   src={speaker.imageUrl}
                   alt={speaker.name}
-                  className="w-full h-full"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="p-4 flex-grow justify-center items-center w-full mt-2">

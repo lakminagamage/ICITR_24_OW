@@ -4,7 +4,7 @@ const posts = [
     title: "Workshop 01",
     href: "#",
     description: "Workshop will be conducted as online session. ",
-    date: "Mar 16, 2020",
+    date: "Dec 05, 2024",
     datetime: "2020-03-16",
     time: "9:00 AM - 11:00 AM",
     category: { title: "Marketing", href: "#" },
