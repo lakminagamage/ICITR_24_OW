@@ -5,6 +5,13 @@ import Footer from "@/components/Footer";
 function speakers() {
   const speakersList = [
     {
+      name: "Professor Takahiro Yabe",
+      role: "Professor & HoD",
+      university:
+        "Tandon School of Engineering, Department of Technology Management and Innovation (TMI) & Center for Urban Science and Progress (CUSP), New York University, USA",
+      imageUrl: "img/speakers/taka.jpg",
+    },
+    {
       name: "Professor Joshi Manohar",
       role: "Professor & HoD",
       university:
@@ -29,7 +36,7 @@ function speakers() {
 
         <div className="w-full flex flex-wrap justify-center items-center">
           {speakersList.map((speaker, index) => (
-            <div className="w-72 h-96 bg-white border border-gray-300 rounded-lg overflow-hidden">
+            <div className="w-72 h-96 bg-white border border-gray-300 rounded-lg mx-10">
               <div className="flex justify-center items-center w-full h-60 scale-110">
                 <img
                   src={speaker.imageUrl}
