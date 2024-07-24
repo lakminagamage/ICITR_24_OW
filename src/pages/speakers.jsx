@@ -36,22 +36,24 @@ function speakers() {
 
         <div className="w-full flex flex-wrap justify-center items-center">
           {speakersList.map((speaker, index) => (
-            <div className="w-72 h-96 bg-white border border-gray-300 rounded-lg mx-10">
-              <div className="flex justify-center items-center w-full h-60 scale-110">
+            <div className="w-72 h-[400px] bg-white border border-gray-300 rounded-lg mx-10 overflow-hidden">
+              <div className="flex justify-center items-center w-full h-60">
                 <img
                   src={speaker.imageUrl}
                   alt={speaker.name}
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="p-4 flex-grow justify-center items-center w-full mt-2">
+              <div className="px-4 pt-2 pb-1 flex-grow justify-center items-center w-full mt-1">
                 <h3 className="text-lg font-bold text-blue-primary">
                   {speaker.name}
                 </h3>
                 <p className="text-sm text-gray-600 font-semibold">
                   {speaker.role}
                 </p>
-                <p className="text-xs text-gray-600">{speaker.university}</p>
+                <p className="text-xs text-gray-600 mt-2">
+                  {speaker.university}
+                </p>
               </div>
             </div>
           ))}

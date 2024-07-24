@@ -17,7 +17,7 @@ const posts = [
   },
   {
     id: 2,
-    title: "Context-aware computing and IoT",
+    title: "Context-Aware Computing and IoT",
     href: "#",
     description: "Workshop will be conducted as online session. ",
     date: "Dec 05, 2024",
@@ -31,13 +31,11 @@ const posts = [
       imageUrl: "img/speakers/shak.jpg",
     },
   },
-
-
 ];
 
 export default function WorkshopLayout() {
   return (
-    <div className="relative isolate bg-white px-6 pb-24 sm:pb-32 lg:px-20">
+    <div className="relative isolate bg-white px-6 pb-24 sm:pb-32 lg:px-20 pt-8">
       <div className="mx-auto px-6 lg:px-8">
         <div className="mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-blue-primary sm:text-4xl">
@@ -50,18 +48,18 @@ export default function WorkshopLayout() {
           style={{ width: "80%" }}
         ></div>
         {/* hr */}
-        <div className="mt-10 flex flex-wrap justify-center w-full pt-10 sm:mt-16 sm:pt-16">
+        <div className="mt-10 flex flex-wrap justify-center w-full pt-4 sm:pt-6">
           {posts.map((post) => (
             <article
               key={post.id}
-              className="flex flex-col overflow-hidden rounded-lg shadow-lg"
+              className="w-[350px] flex flex-col overflow-hidden rounded-lg shadow-lg mx-4 my-4"
             >
-              <p className="text-xl font-semibold text-gray-900 mt-5">
+              <p className="text-lg font-semibold text-gray-900 mt-5 mx-1">
                 {post.title}
               </p>
-              <div className="flex-shrink-0 mt-5">
+              <div className="w-full mt-5">
                 <img
-                  className="h-50 w-80 object-cover"
+                  className="h-50 w-full object-cover"
                   src={post.author.imageUrl}
                   alt=""
                 />
