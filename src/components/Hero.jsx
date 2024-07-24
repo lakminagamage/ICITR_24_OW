@@ -1,12 +1,12 @@
 import Navbar from "@/components/Navbar";
 import ButtonPrimary from "@/components/ButtonPrimary";
 import ButtonSecondary from "@/components/ButtonSecondary";
-import {useRouter} from 'next/router';
+import { useRouter } from "next/router";
 
 function Hero({
   subtitle = "9th International Conference<br />on Information Technology Research",
   buttonsVisible = true,
-  }) {
+}) {
   const router = useRouter();
   return (
     <div id="hero" className="bg-white">
@@ -28,20 +28,33 @@ function Hero({
               alt=""
             />
             <span
-              className="my-0 sm:my-2 text-2xl sm:text-4xl px-4 tracking-tight text-black-primary"
+              className="my-0 sm:my-2 text-xl sm:text-2xl px-4 font-semibold tracking-tight text-black-primary"
               style={{ lineHeight: "1.8" }}
               dangerouslySetInnerHTML={{ __html: subtitle }}
             />
+            <span
+              className="my-0  text-md sm:text-lg px-4 tracking-tight text-black-primary"
+              style={{ lineHeight: "1.8" }}
+              dangerouslySetInnerHTML={{
+                __html: `5<sup>th</sup> and 6<sup>th</sup> December 2024<br>University of Moratuwa, Sri Lanka`,
+              }}
+            ></span>
+
             {buttonsVisible && (
               <div className="mt-6 flex items-center justify-center gap-x-6">
-                <p>
+                <a href="https://cmt3.research.microsoft.com/ICITR2024">
                   <ButtonPrimary
                     text="Submit Papers"
-                    onClick={() => {router.push('/paperSubmission')}}
+                    
                   ></ButtonPrimary>
-                </p>
+                </a>
                 <p>
-                  <ButtonSecondary text="See Tracks" onClick={() => {router.push('/paperSubmission/#tracks')}} />
+                  <ButtonSecondary
+                    text="See Tracks"
+                    onClick={() => {
+                      router.push("/paperSubmission/");
+                    }}
+                  />
                 </p>
               </div>
             )}

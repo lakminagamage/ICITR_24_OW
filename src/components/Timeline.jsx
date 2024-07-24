@@ -3,7 +3,7 @@ import { FaCalendar, FaCalendarAlt } from "react-icons/fa";
 function Timeline() {
   const timeLine = [
     {
-      date: "15th November",
+      date: "15th September",
       title: "Full Paper Submission",
       description: "",
     },
@@ -27,11 +27,11 @@ function Timeline() {
       title: "Registration Close",
       description: "",
     },
-    {
-      date: "15th November",
-      title: "Registration Close for Participants",
-      description: "",
-    },
+    // {
+    //   date: "15th November",
+    //   title: "Registration Close for Participants",
+    //   description: "",
+    // },
     {
       date: "5th December",
       title: "Pre-conference Workshop",
