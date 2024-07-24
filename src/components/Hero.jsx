@@ -42,19 +42,17 @@ function Hero({
 
             {buttonsVisible && (
               <div className="mt-6 flex items-center justify-center gap-x-6">
-                <p>
+                <a href="https://cmt3.research.microsoft.com/ICITR2024">
                   <ButtonPrimary
                     text="Submit Papers"
-                    onClick={() => {
-                      router.push("/paperSubmission");
-                    }}
+                    
                   ></ButtonPrimary>
-                </p>
+                </a>
                 <p>
                   <ButtonSecondary
                     text="See Tracks"
                     onClick={() => {
-                      router.push("/paperSubmission/#tracks");
+                      router.push("/paperSubmission/");
                     }}
                   />
                 </p>

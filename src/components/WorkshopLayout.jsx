@@ -4,7 +4,7 @@ const posts = [
     title: "Workshop 01",
     href: "#",
     description: "Workshop will be conducted as online session. ",
-    date: "Mar 16, 2020",
+    date: "Dec 05, 2024",
     datetime: "2020-03-16",
     time: "9:00 AM - 11:00 AM",
     category: { title: "Marketing", href: "#" },
@@ -15,8 +15,24 @@ const posts = [
       imageUrl: "img/speakers/Asara.jpeg",
     },
   },
+  {
+    id: 2,
+    title: "Context-aware computing and IoT",
+    href: "#",
+    description: "Workshop will be conducted as online session. ",
+    date: "Dec 05, 2024",
+    datetime: "2020-03-16",
+    time: "13:00 PM - 14:30 PM",
+    category: { title: "Marketing", href: "#" },
+    author: {
+      name: " Dr. Shakthi Weerasinghe",
+      role: "Researcher,Swinburne University of Technology, Australia",
+      href: "#",
+      imageUrl: "img/speakers/shak.jpg",
+    },
+  },
 
-  // More posts...
+
 ];
 
 export default function WorkshopLayout() {

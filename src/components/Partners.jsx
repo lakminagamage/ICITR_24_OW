@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Partners() {
   return (
-    <div className="px-10 md:px-20 mx-auto mt-12 mb-16">
+    <div className="px-10 md:px-20 mx-auto mt-8 mb-16">
       <div className="mx-auto">
         <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">Technical Sponsors</h2>
         <p className="mt-6 text-lg leading-8 text-center text-gray-primary">
@@ -12,10 +12,10 @@ function Partners() {
       </div>
       <div className='w-9/12 mx-auto py-8 flex flex-col items-center md:flex-row md:justify-around'>
         <div>
-          <img unoptimized src="/img/partners/uom_logo.png" alt="partner" className="w-auto h-40" />
+          <img unoptimized="true" src="/img/partners/uom_logo.png" alt="partner" className="w-auto h-40" />
         </div>
         <div>
-          <img unoptimized src="/img/partners/ITRU_Logo.png" alt="partner" className="w-auto h-40" />
+          <img unoptimized="true" src="/img/partners/ITRU_Logo.png" alt="partner" className="w-auto h-40" />
         </div>
       </div>
       {/* <div className="flex flex-col">
