@@ -377,7 +377,7 @@ export default function Committee() {
         />
 
         <CommitteeGrid
-          people={financeChairs}
+          people={publicationChairs}
           title={"Publication Chairs"}
         />
 
@@ -399,7 +399,7 @@ export default function Committee() {
         
 
         <CommitteeGrid
-          people={publicationChairs}
+          people={financeChairs}
           title={"Finance Chairs"}
         />
 
