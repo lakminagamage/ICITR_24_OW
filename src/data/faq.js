@@ -6,10 +6,10 @@ const faqs = [
         answer:
             (
                 <>
-                    <p className="mb-2">Authors are invited to submit original full papers of no more than six (6) pages, including results, figures, tables, and references. Authors can include up to two (2) additional pages at a cost to the authors of $250 per page (Rs. 85,000). Electronic submission in PDF format is required. Papers must be formatted in IEEE double-column format on A4 size paper. <br/>Authors must strictly follow the provided template. Final papers found to exceed page limits and or otherwise violate the instructions to authors will not be considered.</p>
+                    <p className="mb-2">Authors are invited to submit original full papers of no more than six (6) pages, including results, figures, tables, and references. Authors can include up to two (2) additional pages at a cost to the authors of $250 per page (Rs. 85,000). Electronic submission in PDF format is required. Papers must be formatted in IEEE double-column format on A4 size paper. <br />Authors must strictly follow the provided template. Final papers found to exceed page limits and or otherwise violate the instructions to authors will not be considered.</p>
                     <a href="https://www.ieee.org/conferences/publishing/templates.html
-">  <ButtonPrimary text="Get the IEEE Template"/></a>
-                    
+">  <ButtonPrimary text="Get the IEEE Template" /></a>
+
                 </>
             ),
     },
@@ -25,22 +25,22 @@ const faqs = [
                 <ul className="list-disc mt-4">
                     <li > &#8226; That the papers they submit are their own original work.</li>
                     <li>
-                    &#8226; That no portion of their paper (including, but not limited to,
+                        &#8226; That no portion of their paper (including, but not limited to,
                         graphics and figures) has been previously published unless written
                         consent from the previous publisher has been obtained prior to
                         submission.
                     </li>
                     <li>
-                    &#8226; That the paper is not currently under consideration for
+                        &#8226; That the paper is not currently under consideration for
                         publication elsewhere.
                     </li>
                     <li>
-                    &#8226; That the authors listed on the paper accurately reflect those who
+                        &#8226; That the authors listed on the paper accurately reflect those who
                         actually did the work and contributed to the paper in a meaningful
                         way.
                     </li>
                     <li>
-                    &#8226; That they have identified and acknowledged all sources used in the
+                        &#8226; That they have identified and acknowledged all sources used in the
                         creation of their paper or manuscript, including any graphics,
                         images, tables, and figures, and also including any persons who do
                         not meet the criteria for authorship.
@@ -59,11 +59,11 @@ const faqs = [
         answer:
             "The Papers will go through a thorough review process. Initial submissions with a high similarity index will be rejected without review. For papers that are accepted for review, Program Committee (PC) members will be matched to submissions based on research expertise and interest. Authors will be provided with a brief time window to address the initial review comments. The revised manuscript submitted by the authors will then be taken into account in the final recommendations, and reviews may be changed accordingly. The final decisions will be made by the program chairs.",
     },
-    {
-        question: "Publication",
-        answer:
-            "Authors will be required to transfer the copyright to their paper to ICITR. Accepted papers will be available via the online schedule at the conference. The published archival versions of the papers will be made available in the ICITR Digital Library and in Google Scholar after the conference. At least one author of each accepted submission must present the paper at the conference. We encourage all authors to attend if possible.",
-    },
+    // {
+    //     question: "Publication",
+    //     answer:
+    //         "Authors will be required to transfer the copyright to their paper to ICITR. Accepted papers will be available via the online schedule at the conference. The published archival versions of the papers will be made available in the ICITR Digital Library and in Google Scholar after the conference. At least one author of each accepted submission must present the paper at the conference. We encourage all authors to attend if possible.",
+    // },
     // {
     //     question: "Preparing Camera-Ready Paper",
     //     answer: (
@@ -292,7 +292,7 @@ const faqs = [
     //         </>
     //     ),
     // },
-    
+
     {
         question: "Payment Details",
         answer:
