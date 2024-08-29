@@ -6,14 +6,14 @@ function speakers() {
   const speakersList = [
     {
       name: "Professor Takahiro Yabe",
-      role: "Professor & HoD",
+      role: "",
       university:
         "Tandon School of Engineering, Department of Technology Management and Innovation (TMI) & Center for Urban Science and Progress (CUSP), New York University, USA",
       imageUrl: "img/speakers/taka.jpg",
     },
     {
       name: "Professor Joshi Manohar",
-      role: "Professor & HoD",
+      role: "",
       university:
         "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
       imageUrl: "img/speakers/profjoshi.jpg",
