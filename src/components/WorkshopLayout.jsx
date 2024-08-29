@@ -2,6 +2,8 @@ const posts = [
   {
     id: 1,
     title: "Workshop 01",
+    subtitle:
+      "Unsupervised Anomaly Detection in Graphs for Knowledge Discovery",
     href: "#",
     description: "Workshop will be conducted as online session. ",
     date: "Dec 05, 2024",
@@ -17,7 +19,9 @@ const posts = [
   },
   {
     id: 2,
-    title: "Context-Aware Computing and IoT",
+    title: "Workshop 02",
+    subtitle:
+      "Enhancing machine intelligence: The Role of Context-awareness in the IoT Ecosystem",
     href: "#",
     description: "Workshop will be conducted as online session. ",
     date: "Dec 05, 2024",
@@ -26,7 +30,7 @@ const posts = [
     category: { title: "Marketing", href: "#" },
     author: {
       name: " Dr. Shakthi Weerasinghe",
-      role: "Researcher,Swinburne University of Technology, Australia",
+      role: "Swinburne University of Technology, Department of Computer Science and Software Engineering in Hawthorn, Victoria.",
       href: "#",
       imageUrl: "img/speakers/shak.jpg",
     },
@@ -57,9 +61,12 @@ export default function WorkshopLayout() {
               <p className="text-lg font-semibold text-gray-900 mt-5 mx-1">
                 {post.title}
               </p>
-              <div className="w-full mt-5">
+              <p className="text-sm text-gray-primary mx-1">{post.subtitle}</p>
+              <div className="w-full h-80 overflow-hidden mt-5">
                 <img
-                  className="h-50 w-full object-cover"
+                  className={`object-cover ${
+                    post.id == 2 ? "transform -translate-y-10" : ""
+                  }`}
                   src={post.author.imageUrl}
                   alt=""
                 />

@@ -14,9 +14,12 @@ const navigation = {
     { name: "Committee", href: "/committee" },
   ],
   institute: [
-    { name: 'University', href: 'https://uom.lk' },
-    { name: 'Faculty of IT', href: 'https://uom.lk/itfac' },
-    { name: 'IT Research Unit', href: 'https://uom.lk/itfac/research/research-unit' }
+    { name: "University", href: "https://uom.lk" },
+    { name: "Faculty of IT", href: "https://uom.lk/itfac" },
+    {
+      name: "IT Research Unit",
+      href: "https://uom.lk/itfac/research/research-unit",
+    },
   ],
   social: [
     {
@@ -152,7 +155,7 @@ export default function Footer() {
             </form> */}
             <Image
               className=""
-              src="/img/logo.png"
+              src="/img/partners/ITRU_Logo.png"
               width={100}
               height={50}
               alt=""
