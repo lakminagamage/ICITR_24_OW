@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import PersonCard from "@/components/PersonCard";
+import Footer from "@/components/Footer";
 import CommitteeGrid from "@/components/CommitteeGrid";
 
 export default function Committee() {
@@ -70,7 +70,7 @@ export default function Committee() {
     },
     {
       name: "KPN Jayasena",
-      description: "University of Sabaragamuwa, Sri Lanka",
+      description: "Technische Universität Darmstadt, Germany",
       image: "kpnj",
     },
     {
@@ -144,12 +144,12 @@ export default function Committee() {
       name: "TC Sandanayake",
       description: "University of Moratuwa, Sri Lanka",
       image: "tcsa",
-    },
-    {
-      name: "RGC Upeksha",
-      description: "University of Moratuwa, Sri Lanka",
-      image: "rgcu",
     }
+    // {
+    //   name: "RGC Upeksha",
+    //   description: "University of Moratuwa, Sri Lanka",
+    //   image: "rgcu",
+    // }
   ];
 
   const financeChairs = [
@@ -180,12 +180,12 @@ export default function Committee() {
       name: "MAN Perera",
       description: "University of Moratuwa, Sri Lanka",
       image: "manp",
-    },
-    {
-      name: "RGC Upeksha",
-      description: "University of Moratuwa, Sri Lanka",
-      image: "rgcu",
-    },
+    }
+    // {
+    //   name: "RGC Upeksha",
+    //   description: "University of Moratuwa, Sri Lanka",
+    //   image: "rgcu",
+    // },
   ];
 
   const localOrgChairs = [
@@ -327,12 +327,15 @@ export default function Committee() {
       name: "GU Ganegoda",
       description: "University of Moratuwa, Sri Lanka",
       image: "guga",
-    },
-    {
-      name: "ALARR Thanuja",
-      description: "University of Moratuwa, Sri Lanka",
-      image: "alar",
     }
+  ];
+
+  const progChairperson = [
+    {
+      name: "Thilina Thanthriwatte",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "tmth",
+    } 
   ];
 
   return (
@@ -364,8 +367,18 @@ export default function Committee() {
         />
 
         <CommitteeGrid
+          people={progChairperson}
+          title={"Program Chairperson"}
+        />
+
+        <CommitteeGrid
           people={techProgCommChairs}
           title={"Technical Program Committee Chairs"}
+        />
+
+        <CommitteeGrid
+          people={publicationChairs}
+          title={"Publication Chairs"}
         />
 
         <CommitteeGrid
@@ -383,13 +396,10 @@ export default function Committee() {
           title={"Award Chairs"}
         />
 
-        <CommitteeGrid
-          people={financeChairs}
-          title={"Publication Chairs"}
-        />
+        
 
         <CommitteeGrid
-          people={publicationChairs}
+          people={financeChairs}
           title={"Finance Chairs"}
         />
 
@@ -408,11 +418,12 @@ export default function Committee() {
           title={"Local Organizing Committee"}
         /> */}
 
-        <CommitteeGrid
+        {/* <CommitteeGrid
           people={studentOC}
           title={"Student Organizing Committee"}
-        />
+        /> */}
       </div>
+      <Footer />
     </div>
   );
 }
