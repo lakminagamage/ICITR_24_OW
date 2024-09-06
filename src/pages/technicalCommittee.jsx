@@ -96,7 +96,8 @@ export default function Committee() {
     },
     {
       name: "Prof. Mohammad M. Rasheed",
-      description: "University of Information Technology and Communications, Baghdad, Iraq (MIEEE)",
+      description:
+        "University of Information Technology and Communications, Baghdad, Iraq (MIEEE)",
       image: placeholderImage,
     },
     {
@@ -171,6 +172,113 @@ export default function Committee() {
     },
   ];
 
+  const trackCoChairs = [
+    {
+      name: "Dr. SC Premaratne",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "scpr",
+    },
+    {
+      name: "Dr. Ravimal Bandara",
+      description: "University of Sri Jayewardenepura, Sri Lanka",
+      image: "ravimal",
+    },
+  ];
+
+  const trackCoordinators = [
+    {
+      name: "Mr. Dilumika Navodya",
+      description: "University of Moratuwa, Sri Lanka",
+      image: placeholderImage,
+    },
+  ];
+
+  const track2CoChairs = [
+    {
+      name: "Dr. ATP Silva",
+      description: "University of Moratuwa, Sri Lanka (MIEEE)",
+      image: "atps",
+    },
+    {
+      name: "Dr. H.M.S.N.Ariyadasa",
+      description: "Uva Wellassa University, Sri Lanka",
+      image: "hmsna",
+    },
+  ];
+
+  const track2Coordinators = [
+    {
+      name: "Ms. Adshayani Pirapaharan",
+      description: "University of Moratuwa, Sri Lanka",
+      image: placeholderImage,
+    },
+  ];
+
+  const track3CoChairs = [
+    {
+      name: "Dr. CP Wijesiriwardana",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "cpwi",
+    },
+    {
+      name: "Dr. PTR.Dabare",
+      description: "The Open University of Sri Lanka",
+      image: "ptrd",
+    },
+  ];
+
+  const track3Coordinators = [
+    {
+      name: "Ms. MN Chandimali",
+      description: "University of Moratuwa, Sri Lanka",
+      image: placeholderImage,
+    },
+  ];
+
+  const track4CoChairs = [
+    {
+      name: "Dr. S Ahangama",
+      description: "University of Moratuwa, Sri Lanka (SMIEEE)",
+      image: "saha",
+    },
+    {
+      name: "Dr. Sandun M. Dassanayake",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "sandun",
+    },
+  ];
+
+  const track4Coordinators = [
+    {
+      name: "Ms. PGS Upeksha",
+      description: "University of Moratuwa, Sri Lanka",
+      image: placeholderImage,
+    },
+  ];
+
+  const track5CoChairs = [
+    {
+      name: "Dr. CRJ Amalraj",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "crja",
+    },
+    {
+      name: "Ms. Chathurika Sewwandi Silva",
+      description: "University of Colombo, Sri Lanka",
+      image: "chathu",
+    },
+  ];
+
+  const track5Coordinators = [
+    {
+      name: "Ms. WMRM Wijesuriya",
+      description: "University of Moratuwa, Sri Lanka",
+      image: placeholderImage,
+    },
+  ];
+
+
+
   return (
     <div className="bg-white">
       <Hero
@@ -188,8 +296,69 @@ export default function Committee() {
           people={techProgCommMembers}
           title={"Technical Program Committee Members"}
         />
+
+        <div className="mx-auto">
+          <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
+            Track 1 - Computer Vision
+          </h2>
+        </div>
+        <CommitteeGrid people={trackCoChairs} title={"Track Co-Chairs"} />
+
+        <CommitteeGrid
+          people={trackCoordinators}
+          title={"Track Coordinators"}
+        />
+
+        <div className="mx-auto">
+          <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
+            Track 2 - Artificial Intelligence
+          </h2>
+        </div>
+
+        <CommitteeGrid people={track2CoChairs} title={"Track Co-Chairs"} />
+        <CommitteeGrid
+          people={track2Coordinators}
+          title={"Track Coordinators"}
+        />
+
+        <div className="mx-auto">
+          <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
+            Track 3 - Computing
+          </h2>
+        </div>
+        <CommitteeGrid people={track3CoChairs} title={"Track Co-Chairs"} />
+        <CommitteeGrid
+          people={track3Coordinators}
+          title={"Track Coordinators"}
+        />
+
+        <div className="mx-auto">
+          <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
+            Track 4 - Data Science & Data Driven Applications
+          </h2>
+          </div>
+
+        <CommitteeGrid people={track4CoChairs} title={"Track Co-Chairs"} />
+        <CommitteeGrid
+          people={track4Coordinators}
+          title={"Track Coordinators"}
+        />
+
+        <div className="mx-auto">
+          <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
+            Track 5 - Cyber Security
+          </h2>
+          </div>
+
+        <CommitteeGrid people={track5CoChairs} title={"Track Co-Chairs"} />
+        <CommitteeGrid
+          people={track5Coordinators}
+          title={"Track Coordinators"}
+        />
+
       </div>
       <Footer />
     </div>
   );
 }
+
