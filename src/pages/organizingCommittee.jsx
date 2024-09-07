@@ -5,7 +5,7 @@ import CommitteeGrid from "@/components/CommitteeGrid";
 export default function Committee() {
   const coChairs = [
     {
-      name: "BH Sudantha",
+      name: "Mr. BH Sudantha (MIEEE)",
       description: "University of Moratuwa, Sri Lanka",
       image: "bhsu",
     },
@@ -13,7 +13,7 @@ export default function Committee() {
 
   const progChairs = [
     {
-      name: "ITS Piyathilake",
+      name: "Dr. ITS Piyathilake (MIEEE)",
       description: "University of Moratuwa, Sri Lanka",
       image: "itsp",
     },
@@ -21,7 +21,7 @@ export default function Committee() {
 
   const confSec = [
     {
-      name: "PD Talagala",
+      name: "Dr. PD Talagala (MIEEE)",
       description: "University of Moratuwa, Sri Lanka",
       image: "pdta",
     },
@@ -138,12 +138,12 @@ export default function Committee() {
 
         <CommitteeGrid people={progChairperson} title={"Program Chair"} />
 
-        <CommitteeGrid people={publicationChairs} title={"Publication Chair"} />
-
         <CommitteeGrid
           people={techProgCommChairs}
           title={"Technical Program Committee Chair"}
         />
+
+        <CommitteeGrid people={publicationChairs} title={"Publication Chair"} />
 
         <CommitteeGrid
           people={intlRelationsChairs}
