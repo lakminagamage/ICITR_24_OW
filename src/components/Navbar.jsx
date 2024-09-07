@@ -8,17 +8,17 @@ import Spinner from "@/components/Spinner";
 const navigation = [
   { name: "HOME", href: "/" },
   { name: "FOR AUTHORS", href: "/paperSubmission" },
-  { name: "WORKSHOPS", href: "/workshops" },
   { name: "SPEAKERS", href: "/speakers" },
-  { name: "PAST ABSTRACTS", href: "/pastAbstracts" },
+  { name: "WORKSHOPS", href: "/workshops" },
   {
     name: "COMMITTEE",
     href: "",
     subMenu: [
       { name: "ORGANIZING COMMITTEE", href: "/organizingCommittee" },
-      { name: "TECHNICAL COMMITTEE", href: "/technicalCommittee" },
+      { name: "TECHNICAL PROGRAM COMMITTEE", href: "/technicalCommittee" },
     ],
   },
+  { name: "PAST ABSTRACTS", href: "/pastAbstracts" },
   { name: "CONTACT US", href: "/contacts" },
 ];
 

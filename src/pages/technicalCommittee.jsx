@@ -90,7 +90,7 @@ export default function Committee() {
       image: placeholderImage,
     },
     {
-      name: "Prof. Sushank Chaudhary",
+      name: "Prof. Sushank Chaudhary (SMIEEE)",
       description: "Guangdong University of Technology, China",
       image: placeholderImage,
     },
@@ -200,7 +200,7 @@ export default function Committee() {
       image: "atps",
     },
     {
-      name: "Dr. H.M.S.N.Ariyadasa",
+      name: "Dr. HMSN Ariyadasa",
       description: "Uva Wellassa University, Sri Lanka",
       image: "hmsna",
     },
@@ -221,7 +221,7 @@ export default function Committee() {
       image: "cpwi",
     },
     {
-      name: "Dr. PTR.Dabare",
+      name: "Dr. PTR Dabare",
       description: "The Open University of Sri Lanka",
       image: "ptrd",
     },
@@ -263,7 +263,7 @@ export default function Committee() {
       image: "crja",
     },
     {
-      name: "Ms. Chathurika Sewwandi Silva",
+      name: "Dr. Chathurika Sewwandi Silva",
       description: "University of Colombo, Sri Lanka",
       image: "chathu",
     },
@@ -276,8 +276,6 @@ export default function Committee() {
       image: placeholderImage,
     },
   ];
-
-
 
   return (
     <div className="bg-white">
@@ -302,12 +300,9 @@ export default function Committee() {
             Track 1 - Computer Vision
           </h2>
         </div>
-        <CommitteeGrid people={trackCoChairs} title={"Track Co-Chairs"} />
+        <CommitteeGrid people={trackCoChairs} title={"Co-Chairs"} />
 
-        <CommitteeGrid
-          people={trackCoordinators}
-          title={"Track Coordinators"}
-        />
+        <CommitteeGrid people={trackCoordinators} title={"Coordinator"} />
 
         <div className="mx-auto">
           <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
@@ -315,50 +310,36 @@ export default function Committee() {
           </h2>
         </div>
 
-        <CommitteeGrid people={track2CoChairs} title={"Track Co-Chairs"} />
-        <CommitteeGrid
-          people={track2Coordinators}
-          title={"Track Coordinators"}
-        />
+        <CommitteeGrid people={track2CoChairs} title={"Co-Chairs"} />
+        <CommitteeGrid people={track2Coordinators} title={"Coordinator"} />
 
         <div className="mx-auto">
           <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
             Track 3 - Computing
           </h2>
         </div>
-        <CommitteeGrid people={track3CoChairs} title={"Track Co-Chairs"} />
-        <CommitteeGrid
-          people={track3Coordinators}
-          title={"Track Coordinators"}
-        />
+        <CommitteeGrid people={track3CoChairs} title={"Co-Chairs"} />
+        <CommitteeGrid people={track3Coordinators} title={"Coordinator"} />
 
         <div className="mx-auto">
           <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
             Track 4 - Data Science & Data Driven Applications
           </h2>
-          </div>
+        </div>
 
-        <CommitteeGrid people={track4CoChairs} title={"Track Co-Chairs"} />
-        <CommitteeGrid
-          people={track4Coordinators}
-          title={"Track Coordinators"}
-        />
+        <CommitteeGrid people={track4CoChairs} title={"Co-Chairs"} />
+        <CommitteeGrid people={track4Coordinators} title={"Coordinator"} />
 
         <div className="mx-auto">
           <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
-            Track 5 - Cyber Security
+            Track 5 - Technology Trends
           </h2>
-          </div>
+        </div>
 
-        <CommitteeGrid people={track5CoChairs} title={"Track Co-Chairs"} />
-        <CommitteeGrid
-          people={track5Coordinators}
-          title={"Track Coordinators"}
-        />
-
+        <CommitteeGrid people={track5CoChairs} title={"Co-Chairs"} />
+        <CommitteeGrid people={track5Coordinators} title={"Coordinator"} />
       </div>
       <Footer />
     </div>
   );
 }
-
