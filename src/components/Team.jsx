@@ -59,6 +59,13 @@ export default function Team() {
         "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
       imageUrl: "img/speakers/profjoshi.jpg",
     },
+    {
+      name: "Prof. Rahmat Budiarto",
+      role: "",
+      university:
+        "College of Computer Science and Information Technology, Al-Baha University, Saudi Arabia",
+      imageUrl: "img/speakers/Rahmat.jpg",
+    },
   ];
 
   return (

@@ -18,6 +18,13 @@ function speakers() {
         "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
       imageUrl: "img/speakers/profjoshi.jpg",
     },
+    {
+      name: "Prof. Rahmat Budiarto",
+      role: "",
+      university:
+        "College of Computer Science and Information Technology, Al-Baha University, Saudi Arabia",
+      imageUrl: "img/speakers/rahmat.jpg",
+    },
   ];
   return (
     <div className="text-center bg-white">
