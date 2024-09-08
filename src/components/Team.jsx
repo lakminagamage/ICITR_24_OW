@@ -50,7 +50,7 @@ export default function Team() {
       role: "",
       university:
         "College of Computer Science and Information Technology, Al-Baha University, Saudi Arabia",
-      imageUrl: "img/speakers/Rahmat.jpg",
+      imageUrl: "img/speakers/rahmat.jpg",
     },
     {
       name: "Professor Takahiro Yabe",
