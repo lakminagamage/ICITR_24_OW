@@ -8,10 +8,17 @@ import Spinner from "@/components/Spinner";
 const navigation = [
   { name: "HOME", href: "/" },
   { name: "FOR AUTHORS", href: "/paperSubmission" },
-  { name: "WORKSHOPS", href: "/workshops" },
   { name: "SPEAKERS", href: "/speakers" },
+  { name: "WORKSHOPS", href: "/workshops" },
+  {
+    name: "COMMITTEE",
+    href: "",
+    subMenu: [
+      { name: "ORGANIZING COMMITTEE", href: "/organizingCommittee" },
+      { name: "TECHNICAL PROGRAM COMMITTEE", href: "/technicalCommittee" },
+    ],
+  },
   { name: "PAST ABSTRACTS", href: "/pastAbstracts" },
-  { name: "COMMITTEE", href: "/committee" },
   { name: "CONTACT US", href: "/contacts" },
 ];
 
@@ -75,19 +82,39 @@ function Navbar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a
-              key={item.name}
-              onClick={() => {
-                setLoading(true);
-                setTimeout(() => {
-                  setLoading(false);
-                }, 400);
-                router.push(item.href);
-              }}
-              className="text-sm font-semibold leading-6 text-blue-dark hover:text-blue-primary transition-colors duration-300 ease-in-out cursor-pointer"
-            >
-              {item.name}
-            </a>
+            <div key={item.name} className="relative group">
+              <a
+                onClick={() => {
+                  setLoading(true);
+                  setTimeout(() => {
+                    setLoading(false);
+                  }, 400);
+                  router.push(item.href);
+                }}
+                className="text-sm font-semibold leading-6 text-blue-dark hover:text-blue-primary transition-colors duration-300 ease-in-out cursor-pointer"
+              >
+                {item.name}
+              </a>
+              {item.subMenu && (
+                <div className="absolute left-0 hidden py-2 w-48 bg-white shadow-lg group-hover:block">
+                  {item.subMenu.map((subItem) => (
+                    <a
+                      key={subItem.name}
+                      onClick={() => {
+                        setLoading(true);
+                        setTimeout(() => {
+                          setLoading(false);
+                        }, 400);
+                        router.push(subItem.href);
+                      }}
+                      className="block px-4 py-2 text-xs font-semibold leading-6 text-blue-dark hover:text-blue-primary transition-colors duration-300 ease-in-out cursor-pointer"
+                    >
+                      {subItem.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </nav>
@@ -123,13 +150,39 @@ function Navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    {item.name}
-                  </a>
+                  <div key={item.name}>
+                    <a
+                      onClick={() => {
+                        setLoading(true);
+                        setTimeout(() => {
+                          setLoading(false);
+                        }, 400);
+                        router.push(item.href);
+                      }}
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      {item.name}
+                    </a>
+                    {item.subMenu && (
+                      <div className="ml-4 mt-2 space-y-2">
+                        {item.subMenu.map((subItem) => (
+                          <a
+                            key={subItem.name}
+                            onClick={() => {
+                              setLoading(true);
+                              setTimeout(() => {
+                                setLoading(false);
+                              }, 400);
+                              router.push(subItem.href);
+                            }}
+                            className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 cursor-pointer"
+                          >
+                            {subItem.name}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>

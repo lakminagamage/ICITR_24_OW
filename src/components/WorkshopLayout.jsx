@@ -43,7 +43,7 @@ export default function WorkshopLayout() {
       <div className="mx-auto px-6 lg:px-8">
         <div className="mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-blue-primary sm:text-4xl">
-            Upcoming Workshops
+            Workshops
           </h2>
         </div>
         {/* hr */}
