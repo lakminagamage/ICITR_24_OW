@@ -17,158 +17,158 @@ export default function Committee() {
     {
       name: "Prof. Rahmat Budiarto",
       description: "Al-Baha University, Saudi Arabia (MIEEE)",
-      image: placeholderImage,
+      image: "Rahmat",
     },
     {
       name: "Prof. Suhaidi Hassan",
       description: "Universiti Utara Malaysia, Malaysia (MIEEE)",
-      image: placeholderImage,
+      image: "suhaidi",
     },
     {
       name: "Dr. Mowafaq Salem Alzboon",
       description: "Jadara University, Jordan",
-      image: placeholderImage,
+      image: "mowafaq",
     },
     {
       name: "Dr. Ibrahim Abdullahi",
       description: "Ibrahim Badamasi Babangida University, Nigeria (SIEEE)",
-      image: placeholderImage,
+      image: "ibrahim",
     },
     {
       name: "Dr. Walid Elbreiki",
       description: "College of Computer Technology, Benghazi, Libya (MIEEE)",
-      image: placeholderImage,
+      image: "walid",
     },
     {
       name: "Dr. Ikram Ud Din",
       description: "University of Haripur, Pakistan (SMIEEE)",
-      image: placeholderImage,
+      image: "ikram",
     },
     {
       name: "Dr. Muhammad Ali Naeem",
       description: "Guangdong University of Petrochemical Technology, China",
-      image: placeholderImage,
+      image: "naeem",
     },
     {
       name: "Dr. Raaid Nasur Kadham Alubady",
       description: "Al-Ayen Iraqi University, Iraq (MIEEE)",
-      image: placeholderImage,
+      image: "raaid",
     },
     {
       name: "Prof. Shivaleela Arlimatti",
       description: "Warana University Kolhapur, India",
-      image: placeholderImage,
+      image: "shivaleela",
     },
     {
       name: "Dr. Omar Dakkak",
       description: "Karabük University, Turkey",
-      image: placeholderImage,
+      image: "omar",
     },
     {
       name: "Dr. Yousef Fazea",
       description: "Marshal University, USA (MIEEE)",
-      image: placeholderImage,
+      image: "yousef",
     },
     {
       name: "Prof. Adib Habbal",
       description: "Karabük University, Turkey (SMIEEE)",
-      image: placeholderImage,
+      image: "adib",
     },
     {
       name: "Prof. Mohamed Hasbullah Omar",
       description: "Universiti Utara Malaysia, Malaysia (MIEEE)",
-      image: placeholderImage,
+      image: "hasbullah",
     },
     {
       name: "Dr. Shahrudin Awang Nor",
       description: "Universiti Utara Malaysia, Malaysia",
-      image: placeholderImage,
+      image: "shahrudin",
     },
     {
       name: "Prof. Jimson Mathew",
       description: "Indian Institute of Technology, Patna, India (MIEEE)",
-      image: placeholderImage,
+      image: "jimson",
     },
     {
       name: "Prof. Sushank Chaudhary (SMIEEE)",
       description: "Guangdong University of Technology, China",
-      image: placeholderImage,
+      image: "sushank",
     },
     {
       name: "Prof. Mohammad M. Rasheed",
       description:
         "University of Information Technology and Communications, Baghdad, Iraq (MIEEE)",
-      image: placeholderImage,
+      image: "rasheed",
     },
     {
       name: "Prof. Naseer Ali Hussein",
       description: "Al-Ayen Iraqi University, Iraq (MIEEE)",
-      image: placeholderImage,
+      image: "naseer",
     },
     {
       name: "Prof. Chan-Yun Yang",
       description: "University of Moratuwa, Sri Lanka (MIEEE)",
-      image: placeholderImage,
+      image: "chan",
     },
     {
       name: "Prof. C Premachandra",
       description: "Shibaura Institute of Technology, Japan (MIEEE)",
-      image: placeholderImage,
+      image: "premachandra",
     },
     {
       name: "Dr. KPN Jayasena",
       description: "Technische Universität Darmstadt, Germany (MIEEE)",
-      image: placeholderImage,
+      image: "jayasena",
     },
     {
       name: "Prof. AS Karunananda",
       description: "University of Moratuwa, Sri Lanka (MIEEE)",
-      image: placeholderImage,
+      image: "karunananda",
     },
     {
       name: "Prof. R Gopura",
       description: "University of Moratuwa, Sri Lanka (SMIEEE)",
-      image: placeholderImage,
+      image: "gopura",
     },
     {
       name: "Prof. Indika Perera",
       description: "University of Moratuwa, Sri Lanka (MIEEE)",
-      image: placeholderImage,
+      image: "indika",
     },
     {
       name: "Prof. Gihan Dias",
       description: "University of Moratuwa, Sri Lanka (MIEEE)",
-      image: placeholderImage,
+      image: "gihan",
     },
     {
       name: "Prof. Tharinda Nishantha Vidanagama",
       description: "Wayamba University of Sri Lanka (SMIEEE)",
-      image: placeholderImage,
+      image: "tharinda",
     },
     {
       name: "Dr. Asanka P. Sayakkara",
       description: "University of Colombo, Sri Lanka (SMIEEE)",
-      image: placeholderImage,
+      image: "asanka",
     },
     {
       name: "Dr. Piumi Ishanka",
       description: "Sabaragamuwa University of Sri Lanka (MIEEE)",
-      image: placeholderImage,
+      image: "piumi",
     },
     {
       name: "Dr. L Ranathunga",
       description: "University of Moratuwa, Sri Lanka (MIEEE)",
-      image: placeholderImage,
+      image: "lochandaka",
     },
     {
       name: "Dr. V Logeeshan",
       description: "University of Moratuwa, Sri Lanka (SMIEEE)",
-      image: placeholderImage,
+      image: "logeeshan",
     },
     {
       name: "Dr. RMM Ruwanthika",
       description: "University of Moratuwa, Sri Lanka (SMIEEE)",
-      image: placeholderImage,
+      image: "ruwanthika",
     },
   ];
 
@@ -189,7 +189,7 @@ export default function Committee() {
     {
       name: "Mr. Dilumika Navodya",
       description: "University of Moratuwa, Sri Lanka",
-      image: placeholderImage,
+      image: "dilumika",
     },
   ];
 
@@ -210,7 +210,7 @@ export default function Committee() {
     {
       name: "Ms. Adshayani Pirapaharan",
       description: "University of Moratuwa, Sri Lanka",
-      image: placeholderImage,
+      image: "adshayani",
     },
   ];
 
@@ -231,7 +231,7 @@ export default function Committee() {
     {
       name: "Ms. MN Chandimali",
       description: "University of Moratuwa, Sri Lanka",
-      image: placeholderImage,
+      image: "chandimali",
     },
   ];
 
@@ -252,7 +252,7 @@ export default function Committee() {
     {
       name: "Ms. PGS Upeksha",
       description: "University of Moratuwa, Sri Lanka",
-      image: placeholderImage,
+      image: "upeksha",
     },
   ];
 
@@ -273,7 +273,7 @@ export default function Committee() {
     {
       name: "Ms. WMRM Wijesuriya",
       description: "University of Moratuwa, Sri Lanka",
-      image: placeholderImage,
+      image: "wijesuriya",
     },
   ];
 
