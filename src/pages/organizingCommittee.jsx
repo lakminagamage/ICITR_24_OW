@@ -132,7 +132,7 @@ export default function Committee() {
       <div className="container mx-auto py-12">
         <CommitteeGrid people={coChairs} title={"General Chair"} />
 
-        <CommitteeGrid people={progChairs} title={"General Co-Chairs"} />
+        <CommitteeGrid people={progChairs} title={"General Co-Chair"} />
 
         <CommitteeGrid people={confSec} title={"Secretary"} />
 
