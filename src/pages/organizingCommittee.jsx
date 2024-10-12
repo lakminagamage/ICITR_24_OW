@@ -27,7 +27,7 @@ export default function Committee() {
     },
   ];
 
-  const progChairperson = [
+  const localOrgChair = [
     {
       name: "Dr. Thilina Thanthriwatte (MIEEE)",
       description: "University of Moratuwa, Sri Lanka",
@@ -112,6 +112,21 @@ export default function Committee() {
       description: "University of Moratuwa, Sri Lanka",
       image: "blds",
     },
+    {
+      name: "Dr. MN Chandimali",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "chandimali",
+    },
+    {
+      name: "Dr. PGS Upeksha",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "upeksha",
+    },
+    {
+      name: "Dr. WMRM Wijesuriya",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "wijesuriya",
+    },
   ];
 
   const publicationChairs = [
@@ -136,7 +151,10 @@ export default function Committee() {
 
         <CommitteeGrid people={confSec} title={"Secretary"} />
 
-        <CommitteeGrid people={progChairperson} title={"Program Chair"} />
+        <CommitteeGrid
+          people={localOrgChair}
+          title={"Local Organizing Chair"}
+        />
 
         <CommitteeGrid
           people={techProgCommChairs}
