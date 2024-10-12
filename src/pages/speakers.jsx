@@ -5,6 +5,13 @@ import Footer from "@/components/Footer";
 function speakers() {
   const speakersList = [
     {
+      name: "Prof. Rahmat Budiarto",
+      role: "",
+      university:
+        "College of Computer Science and Information Technology, Al-Baha University, Saudi Arabia",
+      imageUrl: "img/speakers/rahmat.jpg",
+    },
+    {
       name: "Professor Takahiro Yabe",
       role: "",
       university:
@@ -18,13 +25,6 @@ function speakers() {
         "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
       imageUrl: "img/speakers/profjoshi.jpg",
     },
-    {
-      name: "Prof. Rahmat Budiarto",
-      role: "",
-      university:
-        "College of Computer Science and Information Technology, Al-Baha University, Saudi Arabia",
-      imageUrl: "img/speakers/rahmat.jpg",
-    },
   ];
   return (
     <div className="text-center bg-white">
@@ -32,7 +32,7 @@ function speakers() {
       <div className="container px-2 md:mx-auto py-12">
         <div className="mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-blue-primary sm:text-4xl">
-            Speakers of The Conference
+            Keynote Speakers of Conference
           </h2>
         </div>
         {/* hr */}

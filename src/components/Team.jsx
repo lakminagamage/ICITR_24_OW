@@ -46,6 +46,13 @@ const people = [
 export default function Team() {
   const speakersList = [
     {
+      name: "Prof. Rahmat Budiarto",
+      role: "",
+      university:
+        "College of Computer Science and Information Technology, Al-Baha University, Saudi Arabia",
+      imageUrl: "img/speakers/rahmat.jpg",
+    },
+    {
       name: "Professor Takahiro Yabe",
       role: "",
       university:
@@ -58,13 +65,6 @@ export default function Team() {
       university:
         "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
       imageUrl: "img/speakers/profjoshi.jpg",
-    },
-    {
-      name: "Prof. Rahmat Budiarto",
-      role: "",
-      university:
-        "College of Computer Science and Information Technology, Al-Baha University, Saudi Arabia",
-      imageUrl: "img/speakers/Rahmat.jpg",
     },
   ];
 
