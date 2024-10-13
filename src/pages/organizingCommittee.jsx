@@ -152,21 +152,21 @@ export default function Committee() {
         <CommitteeGrid people={confSec} title={"Secretary"} />
 
         <CommitteeGrid
+          people={techProgCommChairs}
+          title={"Technical Program Committee Chair"}
+        />
+
+        <CommitteeGrid
           people={localOrgChair}
           title={"Local Organizing Chair"}
         />
 
         <CommitteeGrid
-          people={techProgCommChairs}
-          title={"Technical Program Committee Chair"}
-        />
-
-        <CommitteeGrid people={publicationChairs} title={"Publication Chair"} />
-
-        <CommitteeGrid
           people={intlRelationsChairs}
           title={"International Relations Chair"}
         />
+
+        <CommitteeGrid people={publicationChairs} title={"Publication Chair"} />
 
         <CommitteeGrid people={awardChairs} title={"Awards Chair"} />
 
