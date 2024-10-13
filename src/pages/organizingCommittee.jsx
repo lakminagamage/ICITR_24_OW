@@ -131,7 +131,7 @@ export default function Committee() {
 
   const publicationChairs = [
     {
-      name: "Dr. GU Ganegoda (MIEEE)",
+      name: "Dr. GU Ganegoda",
       description: "University of Moratuwa, Sri Lanka",
       image: "guga",
     },
@@ -177,7 +177,7 @@ export default function Committee() {
           title={"Publicity and Public Relations Chair"}
         />
 
-        <CommitteeGrid people={financeChairs} title={"Financial Chair"} />
+        <CommitteeGrid people={financeChairs} title={"Finance Chair"} />
 
         <CommitteeGrid
           people={workshopChairs}
