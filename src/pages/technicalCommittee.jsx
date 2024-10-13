@@ -220,13 +220,16 @@ export default function Committee() {
     },
   ];
 
-
-  const track4CoChairs = [
+  const track4Chairs = [
     {
-      name: "Dr. S Ahangama (SMIEEE)",
+      name: "Dr. S Ahangama (SMIEEE)",  
       description: "University of Moratuwa, Sri Lanka",
       image: "saha",
     },
+  ];
+
+  const track4CoChairs = [
+  
     {
       name: "Dr. Sandun M. Dassanayake",
       description: "University of Moratuwa, Sri Lanka",
@@ -297,7 +300,8 @@ export default function Committee() {
             Track 4 - Smart and Sustainable Technologies
           </h2>
         </div>
-        <CommitteeGrid people={track4CoChairs} title={"Co-Chairs"} />
+        <CommitteeGrid people={track4Chairs} title={"Chair"} />
+        <CommitteeGrid people={track4CoChairs} title={"Co-Chair"} />
 
         <div className="mx-auto">
           <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
