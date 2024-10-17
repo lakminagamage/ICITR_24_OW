@@ -113,17 +113,17 @@ export default function Committee() {
       image: "blds",
     },
     {
-      name: "Dr. MN Chandimali",
+      name: "Mrs. MN Chandimali",
       description: "University of Moratuwa, Sri Lanka",
       image: "chandimali",
     },
     {
-      name: "Dr. PGS Upeksha",
+      name: "Ms. PGS Upeksha",
       description: "University of Moratuwa, Sri Lanka",
       image: "upeksha",
     },
     {
-      name: "Dr. WMRM Wijesuriya",
+      name: "Ms. WMRM Wijesuriya",
       description: "University of Moratuwa, Sri Lanka",
       image: "wijesuriya",
     },

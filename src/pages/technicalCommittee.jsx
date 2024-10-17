@@ -273,7 +273,7 @@ export default function Committee() {
 
         <div className="mx-auto">
           <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
-            Track 1 - Computer Systems Engineering
+            Track 1 - Computer Vision
           </h2>
         </div>
         <CommitteeGrid people={track1Chairs} title={"Chair"} />
@@ -281,7 +281,7 @@ export default function Committee() {
 
         <div className="mx-auto">
           <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
-            Track 2 - Data Science and Artificial Intelligence
+            Track 2 - Artificial Intelligence
           </h2>
         </div>
         <CommitteeGrid people={track2Chairs} title={"Chair"} />
@@ -289,7 +289,7 @@ export default function Committee() {
 
         <div className="mx-auto">
           <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
-            Track 3 - Emerging Technologies
+            Track 3 - Computing
           </h2>
         </div>
         <CommitteeGrid people={track3Chairs} title={"Chair"} />
@@ -297,7 +297,7 @@ export default function Committee() {
 
         <div className="mx-auto">
           <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
-            Track 4 - Smart and Sustainable Technologies
+            Track 4 - Data Science and Data Driven Applications
           </h2>
         </div>
         <CommitteeGrid people={track4Chairs} title={"Chair"} />
@@ -305,7 +305,7 @@ export default function Committee() {
 
         <div className="mx-auto">
           <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
-            Track 5 - Robotics and Autonomous Systems
+            Track 5 - Technology Trends
           </h2>
         </div>
         <CommitteeGrid people={track5Chairs} title={"Chair"} />
