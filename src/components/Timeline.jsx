@@ -3,27 +3,27 @@ import { FaCalendar, FaCalendarAlt } from "react-icons/fa";
 function Timeline() {
   const timeLine = [
     {
-      date: "17th October",
+      date: "30th October",
       title: "Full Paper Submission",
       description: "",
     },
     {
-      date: "10th November",
+      date: "15th November",
       title: "Notification of Acceptance of Full Papers",
       description: "",
     },
     {
-      date: "10th November",
+      date: "15th November",
       title: "Registration Open",
       description: "",
     },
     {
-      date: "17th November",
+      date: "20th November",
       title: "Camera Ready Submission",
       description: "",
     },
     {
-      date: "17th November",
+      date: "25th November",
       title: "Registration Close",
       description: "",
     },
