@@ -5,8 +5,22 @@ import Footer from "@/components/Footer";
 function speakers() {
   const speakersList = [
     {
+      name: "Prof. Rahmat Budiarto",
+      role: "",
+      university:
+        "College of Computer Science and Information Technology, Al-Baha University, Saudi Arabia",
+      imageUrl: "img/speakers/rahmat.jpg",
+    },
+    {
+      name: "Professor Takahiro Yabe",
+      role: "",
+      university:
+        "Tandon School of Engineering, Department of Technology Management and Innovation (TMI) & Center for Urban Science and Progress (CUSP), New York University, USA",
+      imageUrl: "img/speakers/taka.jpg",
+    },
+    {
       name: "Professor Joshi Manohar",
-      role: "Professor & HoD",
+      role: "",
       university:
         "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
       imageUrl: "img/speakers/profjoshi.jpg",
@@ -18,7 +32,7 @@ function speakers() {
       <div className="container px-2 md:mx-auto py-12">
         <div className="mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-blue-primary sm:text-4xl">
-            Speakers of The Conference
+            Keynote Speakers of Conference
           </h2>
         </div>
         {/* hr */}
@@ -29,22 +43,24 @@ function speakers() {
 
         <div className="w-full flex flex-wrap justify-center items-center">
           {speakersList.map((speaker, index) => (
-            <div className="w-72 h-96 bg-white border border-gray-300 rounded-lg overflow-hidden">
-              <div className="flex justify-center items-center w-full h-60 scale-110">
+            <div className="w-72 h-[400px] bg-white border border-gray-300 rounded-lg mx-10 overflow-hidden">
+              <div className="flex justify-center items-center w-full h-60">
                 <img
                   src={speaker.imageUrl}
                   alt={speaker.name}
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="p-4 flex-grow justify-center items-center w-full mt-2">
+              <div className="px-4 pt-2 pb-1 flex-grow justify-center items-center w-full mt-1">
                 <h3 className="text-lg font-bold text-blue-primary">
                   {speaker.name}
                 </h3>
                 <p className="text-sm text-gray-600 font-semibold">
                   {speaker.role}
                 </p>
-                <p className="text-xs text-gray-600">{speaker.university}</p>
+                <p className="text-xs text-gray-600 mt-2">
+                  {speaker.university}
+                </p>
               </div>
             </div>
           ))}

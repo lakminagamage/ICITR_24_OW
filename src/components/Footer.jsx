@@ -9,14 +9,14 @@ const navigation = {
     { name: "Past Abstracts", href: "/pastAbstracts" },
     { name: "For Authors", href: "/paperSubmission" },
   ],
-  contacts: [
-    { name: "Contacts", href: "/contacts" },
-    { name: "Committee", href: "/committee" },
-  ],
+  contacts: [{ name: "Contacts", href: "/contacts" }],
   institute: [
-    { name: 'University', href: 'https://uom.lk' },
-    { name: 'Faculty of IT', href: 'https://uom.lk/itfac' },
-    { name: 'IT Research Unit', href: 'https://uom.lk/itfac/research/research-unit' }
+    { name: "University", href: "https://uom.lk" },
+    { name: "Faculty of IT", href: "https://uom.lk/itfac" },
+    {
+      name: "IT Research Unit",
+      href: "https://uom.lk/itfac/research/research-unit",
+    },
   ],
   social: [
     {
@@ -63,7 +63,7 @@ export default function Footer() {
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.resources.map((item) => (
-                    <li key={item.name}>
+                    <li key={item.name} className={"cursor-pointer"}>
                       <p
                         onClick={() => {
                           setLoading(true);
@@ -87,7 +87,7 @@ export default function Footer() {
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.contacts.map((item) => (
-                    <li key={item.name}>
+                    <li key={item.name} className={"cursor-pointer"}>
                       <p
                         onClick={() => {
                           router.push(item.href);
@@ -108,7 +108,7 @@ export default function Footer() {
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.institute.map((item) => (
-                    <li key={item.name}>
+                    <li key={item.name} className={"cursor-pointer"}>
                       <a
                         href={item.href}
                         className="text-sm leading-6 text-gray-600 hover:text-gray-900"
@@ -152,7 +152,7 @@ export default function Footer() {
             </form> */}
             <Image
               className=""
-              src="/img/logo.png"
+              src="/img/partners/ITRU_Logo.png"
               width={100}
               height={50}
               alt=""
@@ -167,7 +167,7 @@ export default function Footer() {
             />
 
             <p className="mt-4 text-sm leading-6 text-gray-600 text-center font-semibold">
-              International Conference on Information Technology Research 2024
+              Information Technology Research Unit
             </p>
 
             <p className="mt-2 text-sm leading-6 text-gray-600 text-center">
