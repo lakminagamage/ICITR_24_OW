@@ -10,12 +10,15 @@ function Partners() {
           Meet the stronghold behind this great journey.
         </p>
       </div>
-      <div className='w-9/12 mx-auto py-8 flex flex-col items-center md:flex-row md:justify-around'>
+      <div className='w-9/12 mx-auto py-8 flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:justify-around'>
         <div>
           <img unoptimized="true" src="/img/partners/uom_logo.png" alt="partner" className="w-auto h-40" />
         </div>
         <div>
           <img unoptimized="true" src="/img/partners/ITRU_Logo.png" alt="partner" className="w-auto h-40" />
+        </div>
+        <div>
+          <img unoptimized="true" src="/img/eventDescription/IEEElogo.png" alt="partner" className="w-auto h-20" />
         </div>
       </div>
       {/* <div className="flex flex-col">
