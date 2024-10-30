@@ -78,7 +78,7 @@ export default function Team() {
         </div>
         <div className="w-full flex flex-wrap justify-center items-center text-center mt-12">
           {speakersList.map((speaker, index) => (
-            <div className="w-72 h-96 bg-white border border-gray-300 rounded-lg overflow-hidden mx-6">
+            <div className="w-72 h-96 mt-6 bg-white border border-gray-300 rounded-lg overflow-hidden mx-6 md:mt-0">
               <div className="flex justify-center items-center w-full h-60 scale-110">
                 <img
                   src={speaker.imageUrl}

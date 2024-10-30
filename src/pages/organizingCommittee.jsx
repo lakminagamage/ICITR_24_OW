@@ -27,7 +27,7 @@ export default function Committee() {
     },
   ];
 
-  const progChairperson = [
+  const localOrgChair = [
     {
       name: "Dr. Thilina Thanthriwatte (MIEEE)",
       description: "University of Moratuwa, Sri Lanka",
@@ -112,11 +112,26 @@ export default function Committee() {
       description: "University of Moratuwa, Sri Lanka",
       image: "blds",
     },
+    {
+      name: "Mrs. MN Chandimali",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "chandimali",
+    },
+    {
+      name: "Ms. PGS Upeksha",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "upeksha",
+    },
+    {
+      name: "Ms. WMRM Wijesuriya",
+      description: "University of Moratuwa, Sri Lanka",
+      image: "wijesuriya",
+    },
   ];
 
   const publicationChairs = [
     {
-      name: "Dr. GU Ganegoda (MIEEE)",
+      name: "Dr. GU Ganegoda",
       description: "University of Moratuwa, Sri Lanka",
       image: "guga",
     },
@@ -136,19 +151,22 @@ export default function Committee() {
 
         <CommitteeGrid people={confSec} title={"Secretary"} />
 
-        <CommitteeGrid people={progChairperson} title={"Program Chair"} />
-
         <CommitteeGrid
           people={techProgCommChairs}
           title={"Technical Program Committee Chair"}
         />
 
-        <CommitteeGrid people={publicationChairs} title={"Publication Chair"} />
+        <CommitteeGrid
+          people={localOrgChair}
+          title={"Local Organizing Chair"}
+        />
 
         <CommitteeGrid
           people={intlRelationsChairs}
           title={"International Relations Chair"}
         />
+
+        <CommitteeGrid people={publicationChairs} title={"Publication Chair"} />
 
         <CommitteeGrid people={awardChairs} title={"Awards Chair"} />
 
@@ -159,7 +177,7 @@ export default function Committee() {
           title={"Publicity and Public Relations Chair"}
         />
 
-        <CommitteeGrid people={financeChairs} title={"Financial Chair"} />
+        <CommitteeGrid people={financeChairs} title={"Finance Chair"} />
 
         <CommitteeGrid
           people={workshopChairs}
