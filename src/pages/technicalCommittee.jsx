@@ -16,12 +16,12 @@ export default function Committee() {
   const techProgCommMembers = [
     {
       name: "Prof. Rahmat Budiarto",
-      description: "Al-Baha University, Saudi Arabia (MIEEE)",
+      description: "Al-Baha University, Saudi Arabia",
       image: "Rahmat",
     },
     {
       name: "Prof. Suhaidi Hassan",
-      description: "Universiti Utara Malaysia, Malaysia (MIEEE)",
+      description: "Universiti Utara Malaysia, Malaysia",
       image: "suhaidi",
     },
     {
@@ -31,17 +31,17 @@ export default function Committee() {
     },
     {
       name: "Dr. Ibrahim Abdullahi",
-      description: "Ibrahim Badamasi Babangida University, Nigeria (SIEEE)",
+      description: "Ibrahim Badamasi Babangida University, Nigeria",
       image: "ibrahim",
     },
     {
       name: "Dr. Walid Elbreiki",
-      description: "College of Computer Technology, Benghazi, Libya (MIEEE)",
+      description: "College of Computer Technology, Benghazi, Libya",
       image: "walid",
     },
     {
       name: "Dr. Ikram Ud Din",
-      description: "University of Haripur, Pakistan (SMIEEE)",
+      description: "University of Haripur, Pakistan",
       image: "ikram",
     },
     {
@@ -51,7 +51,7 @@ export default function Committee() {
     },
     {
       name: "Dr. Raaid Nasur Kadham Alubady",
-      description: "Al-Ayen Iraqi University, Iraq (MIEEE)",
+      description: "Al-Ayen Iraqi University, Iraq",
       image: "raaid",
     },
     {
@@ -66,17 +66,17 @@ export default function Committee() {
     },
     {
       name: "Dr. Yousef Fazea",
-      description: "Marshal University, USA (MIEEE)",
+      description: "Marshal University, USA",
       image: "yousef",
     },
     {
       name: "Prof. Adib Habbal",
-      description: "Karabük University, Turkey (SMIEEE)",
+      description: "Karabük University, Turkey",
       image: "adib",
     },
     {
       name: "Prof. Mohamed Hasbullah Omar",
-      description: "Universiti Utara Malaysia, Malaysia (MIEEE)",
+      description: "Universiti Utara Malaysia, Malaysia",
       image: "hasbullah",
     },
     {
@@ -86,23 +86,23 @@ export default function Committee() {
     },
     {
       name: "Prof. Jimson Mathew",
-      description: "Indian Institute of Technology, Patna, India (MIEEE)",
+      description: "Indian Institute of Technology, Patna, India",
       image: "jimson",
     },
     {
-      name: "Prof. Sushank Chaudhary (SMIEEE)",
+      name: "Prof. Sushank Chaudhary",
       description: "Guangdong University of Technology, China",
       image: "sushank",
     },
     {
       name: "Prof. Mohammad M. Rasheed",
       description:
-        "University of Information Technology and Communications, Baghdad, Iraq (MIEEE)",
+        "University of Information Technology and Communications, Baghdad, Iraq",
       image: "rasheed",
     },
     {
       name: "Prof. Naseer Ali Hussein",
-      description: "Al-Ayen Iraqi University, Iraq (MIEEE)",
+      description: "Al-Ayen Iraqi University, Iraq",
       image: "naseer",
     },
     {
@@ -152,7 +152,7 @@ export default function Committee() {
     },
     {
       name: "Dr. Piumi Ishanka",
-      description: "Sabaragamuwa University of Sri Lanka (MIEEE)",
+      description: "Sabaragamuwa University of Sri Lanka",
       image: "piumi",
     },
     {
@@ -162,7 +162,7 @@ export default function Committee() {
     },
     {
       name: "Dr. V Logeeshan",
-      description: "University of Moratuwa, Sri Lanka (SMIEEE)",
+      description: "University of Moratuwa, Sri Lanka",
       image: "logeeshan",
     },
     {
@@ -222,14 +222,13 @@ export default function Committee() {
 
   const track4Chairs = [
     {
-      name: "Dr. S Ahangama (SMIEEE)",  
+      name: "Dr. S Ahangama (SMIEEE)",
       description: "University of Moratuwa, Sri Lanka",
       image: "saha",
     },
   ];
 
   const track4CoChairs = [
-  
     {
       name: "Dr. Sandun M. Dassanayake",
       description: "University of Moratuwa, Sri Lanka",

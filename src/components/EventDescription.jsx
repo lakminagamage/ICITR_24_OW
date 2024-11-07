@@ -46,7 +46,7 @@ export default function EventDescription() {
           completeness, consistency, and presentation.
           <br />
           <br />
-          {/* All the accepted and presented papers will be submitted to IEEE Xplore digital library which is indexed by SCOPUS. */}
+          All the accepted and presented papers will be submitted to IEEE Xplore digital library which is indexed by SCOPUS.
         </div>
       </div>
     </div>
