@@ -7,12 +7,12 @@ function Partners() {
         <h2 className="text-3xl font-bold text-center tracking-tight text-blue-primary sm:text-4xl">
           Technical Sponsors
         </h2>
-        <p className="mt-6 text-lg leading-8 text-center text-gray-primary">
+        {/* <p className="mt-6 text-lg leading-8 text-center text-gray-primary">
           Meet the stronghold behind this great journey.
-        </p>
+        </p> */}
       </div>
-      <div className="w-9/12 mx-auto py-8 flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:justify-around">
-        <div>
+      <div className="w-9/12 mx-auto py-8 flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:flex-wrap md:justify-around">
+        <div className="w-full md:w-auto">
           <img
             unoptimized="true"
             src="/img/partners/uom_logo.png"
@@ -20,7 +20,7 @@ function Partners() {
             className="w-auto h-40"
           />
         </div>
-        <div>
+        <div className="w-full md:w-auto">
           <img
             unoptimized="true"
             src="/img/partners/ITRU_Logo.png"
@@ -28,11 +28,19 @@ function Partners() {
             className="w-auto h-40"
           />
         </div>
-        <div>
+        <div className="w-full md:w-auto">
           <img
             unoptimized="true"
             src="/img/eventDescription/IEEElogo.png"
             alt="partner"
+            className="w-auto h-20"
+          />
+        </div>
+        <div className="w-full md:w-auto">
+          <img
+            unoptimized="true"
+            src="/img/partners/ieeesl.png"
+            alt="new partner"
             className="w-auto h-20"
           />
         </div>
