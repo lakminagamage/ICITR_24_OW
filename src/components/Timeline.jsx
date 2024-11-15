@@ -8,17 +8,17 @@ function Timeline() {
       description: "",
     },
     {
-      date: "15th November",
+      date: "20th November",
       title: "Notification of Acceptance of Full Papers",
       description: "",
     },
     {
-      date: "15th November",
+      date: "20th November",
       title: "Registration Open",
       description: "",
     },
     {
-      date: "20th November",
+      date: "25th November",
       title: "Camera Ready Submission",
       description: "",
     },
@@ -27,11 +27,6 @@ function Timeline() {
       title: "Registration Close",
       description: "",
     },
-    // {
-    //   date: "15th November",
-    //   title: "Registration Close for Participants",
-    //   description: "",
-    // },
     {
       date: "5th December",
       title: "Pre-conference Workshop",
