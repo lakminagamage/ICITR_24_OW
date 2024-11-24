@@ -18,12 +18,12 @@ function Timeline() {
       description: "",
     },
     {
-      date: "25th November",
+      date: "2nd December",
       title: "Camera Ready Submission",
       description: "",
     },
     {
-      date: "25th November",
+      date: "2nd December",
       title: "Registration Close",
       description: "",
     },
