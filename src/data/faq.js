@@ -123,7 +123,7 @@ const faqs = [
                     </li>
                     <li>
                         For papers in which all authors are employed by the European
-                        Union, the copyright notice is: <b>979-8-3315-1142-5/24/$31.00©2024 European Union</b>
+                        Union, the copyright notice is: <br/><b>979-8-3315-1142-5/24/$31.00 ©2024 European Union</b>
                     </li>
                     <li>
                         For all other papers the copyright notice is:{" "}
