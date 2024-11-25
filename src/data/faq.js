@@ -7,9 +7,8 @@ const faqs = [
             (
                 <>
                     <p className="mb-2">Authors are invited to submit original full papers of no more than six (6) pages, including results, figures, tables, and references. Authors can include up to two (2) additional pages at a cost to the authors of $250 per page (Rs. 85,000). Electronic submission in PDF format is required. Papers must be formatted in IEEE double-column format on A4 size paper. <br />Authors must strictly follow the provided template. Final papers found to exceed page limits and or otherwise violate the instructions to authors will not be considered.</p>
-                    <a href="https://www.ieee.org/conferences/publishing/templates.html
-">  <ButtonPrimary text="Get the IEEE Template" /></a>
-
+                    <a href="https://www.ieee.org/conferences/publishing/templates.html">
+                        <ButtonPrimary text="Get the IEEE Template" /></a>
                 </>
             ),
     },
@@ -23,7 +22,7 @@ const faqs = [
                     warrant:
                 </p>
                 <ul className="list-disc mt-4">
-                    <li > &#8226; That the papers they submit are their own original work.</li>
+                    <li >&#8226; That the papers they submit are their own original work.</li>
                     <li>
                         &#8226; That no portion of their paper (including, but not limited to,
                         graphics and figures) has been previously published unless written
@@ -61,229 +60,293 @@ const faqs = [
     },
     {
         question: "Publication",
-        answer:
-            "Authors will be required to transfer the copyright to their paper to ICITR. Accepted papers will be available via the online schedule at the conference. At least one author of each accepted submission must present the paper at the conference. We encourage all authors to attend if possible. ICITR strongly discourages changes and withdrawals of papers once submitted and included in the program. If under any circumstances it becomes necessary for the author(s) to withdraw or change a paper, ICITR policy dictates.",
-    },
-    {
-        question: "Preparing Camera-Ready Paper",
         answer: (
             <>
-                <ul className="list-disc mt-4">
-                    <li>
-                        Please edit your paper by incorporating all reviewers' comments
+                <div className="flex flex-col space-y-2">
+                    <p>Authors will be required to transfer the copyright to their paper to ICITR. Accepted papers will be
+                        available via the online schedule at the conference.</p>
+                    <p>At least one author of each accepted submission must present the paper at the conference. We
+                        encourage all authors to attend if possible.</p>
+                    <p>ICITR strongly discourages changes and withdrawals of papers once submitted and included in
+                        the program. If under any circumstances it becomes necessary for the author(s) to withdraw or
+                        change a paper, ICITR policy dictates.</p>
+                </div>
+            </>
+        )
+    },
+    {
+        question: "Camera-Ready Paper",
+        answer: (
+            <div>
+                <div className="mt-6 mb-2 font-semibold">Preparing Camera-Ready Paper</div>
+                <ul className="ml-4" style={{ listStyleType: "disc" }}>
+                    <li>Please edit your paper by incorporating all reviewers' comments
                         and use IEEE conference paper format. Please note that ICITR 2024
                         organizers reserve the right to reject your paper, if you don't
                         modify your paper accordingly.
                     </li>
-                    <li>
-                        The final camera-ready paper submission must be limited to 6
-                        pages.
+                    <li>The final camera-ready paper submission must be limited to 6 pages.
                     </li>
-                    <li>
-                        It is strictly required to IEEE format and referencing style. The
-                        latest IEEE template could be found at{" "}
+                    <li>It is strictly required to IEEE format and referencing style. The
+                        latest IEEE template could be found at {" "}
                         <a
+                            className="text-blue-600 visited:text-purple-600"
                             href="https://www.ieee.org/conferences/publishing/templates.html"
-                            className=" underline"
+                            target="_blank"
                         >
-                            Click Here
+                            https://www.ieee.org/conferences/publishing/templates.html
                         </a>
                         . The papers which do not follow IEEE template will not be
                         accepted by IEEE Xplore and cannot be published.
                     </li>
-                    <li>
-                        Please DO NOT include page numbers in the final manuscript
+                    <li>Please <b>DO NOT include page numbers</b> in the final manuscript
                         submission.
                     </li>
-                    <li>
-                        The appropriate copyright clearance code notice is to appear on
+                    <li>The appropriate copyright clearance code notice is to appear on
                         <b>
                             {` `}the bottom, left-hand side of the first page of the paper,
                             as follows:
                         </b>
                     </li>
                 </ul>
-                <ul className="list-inside list-decimal mt-4">
+                <ul style={{ listStyleType: "circle", marginLeft: '40px' }}>
                     <li>
-                       - For papers in which all authors are employed by the{" "}
+                        For papers in which all authors are employed by the US government, the copyright notice is:{" "}
                         <b>
-                            US government, the copyright notice is: U.S. Government work not
-                            protected by U.S.
-                        </b>{" "}
-                        copyright
+                            U.S. Government work not protected by U.S. copyright
+                        </b>
                     </li>
                     <li>
-                        - For papers in which all authors are employed by a Crown government
+                        For papers in which all authors are employed by a Crown government
                         (UK, Canada, and Australia), the copyright notice is:{" "}
                         <b>979-8-3315-1142-5/24/$31.00 ©2024 Crown</b>
                     </li>
                     <li>
-                        - For papers in which all authors are employed by the European
+                        For papers in which all authors are employed by the European
                         Union, the copyright notice is: <b>979-8-3315-1142-5/24/$31.00©2024 European Union</b>
                     </li>
                     <li>
-                        - For all other papers the copyright notice is:{" "}
+                        For all other papers the copyright notice is:{" "}
                         <b>979-8-3315-1142-5/24/$31.00 ©2024 IEEE</b>
                     </li>
                 </ul>
-            </>
-        ),
-    },
-    {
-        question: "Preparing the paper IEEE PDF compliant using IEEE PDF eXpress",
-        answer: (
-            <ul className="list-disc">
-                <li>
-                    Before submit the paper, authors are instructed to prepare the paper
-                    IEEE PDF compliant.
-                </li>
-                <ul className="list-inside list-decimal">
+
+                <div className="mt-6 mb-2 font-semibold">Preparing the paper IEEE PDF compliant using IEEE PDF eXpress</div>
+                <ul className="ml-4" style={{ listStyleType: "disc" }}>
                     <li>
-                        Add the copyright notice to the bottom of the bottom, left-hand
-                        side of the first page of the paper
+                        Before submit the paper, authors are instructed to prepare the paper
+                        IEEE PDF compliant.
                     </li>
+                    <ol style={{ listStyleType: "decimal", marginLeft: '40px' }}>
+                        <li>
+                            Add the copyright notice to the bottom left-hand
+                            side of the first page of the paper.
+                        </li>
+                        <li>
+                            Proofread your source document thoroughly to confirm that it will
+                            require no revision.
+                        </li>
+                    </ol>
                     <li>
-                        Proofread your source document thoroughly to confirm that it will
-                        require no revision
+                        Follow the following instructions to prepare IEEE compliant PDF
+                        version of your accepted paper, this is compulsory for all accepted
+                        papers.
                     </li>
-                </ul>
-                <li>
-                    Follow the following instructions to prepare IEEE compliant PDF
-                    version of your accepted paper, this is compulsory for all accepted
-                    papers.
-                </li>
-                <ul className="list-inside list-disc">
-                    <li>
-                        Log in to the IEEE PDF eXpress site using:
-                        https://ieee-pdf-express.org/
-                    </li>
-                    <li>First time users should create your PDF eXpress account.</li>
-                    <ul className="list-inside list-decimal ml-8">
-                        <li>Select the Create Account</li>
-                        <li>Enter the following:</li>
-                        <ul className="list-inside list-disc ml-8">
+                    <ul style={{ listStyleType: "circle", marginLeft: '40px' }}>
+                        <li>
+                            Log in to the IEEE PDF eXpress site using:
+                            <a
+                                className="text-blue-600 visited:text-purple-600"
+                                href="https://ieee-pdf-express.org/"
+                                target="_blank">
+                                https://ieee-pdf-express.org/
+                            </a>
+                        </li>
+                        <li>First time users should create your PDF eXpress account.</li>
+                        <div className="font-semibold">First-time users should do the following:</div>
+                        <ul style={{ listStyleType: "decimal", marginLeft: '40px' }}>
+                            <li>Select the Create Account</li>
+                            <li>Enter the following:</li>
+                            <ul style={{ listStyleType: "disc", marginLeft: '40px' }}>
+                                <li>
+                                    <b>64794X</b> for the Conference ID
+                                </li>
+                                <li>your email address</li>
+                                <li>a password</li>
+                            </ul>
                             <li>
-                                <b>ID_NUM*</b> for the Conference ID (ID_NUM* is the
-                                conference ID.)
+                                Continue to enter information as prompted. An Online
+                                confirmation will be displayed, and an email confirmation will
+                                be sent verifying your account setup.
+                            </li>
+                        </ul>
+                        <div>
+                            <b>Previous users</b> of PDF eXpress need to follow the above steps but
+                            should enter the same password that was used for previous
+                            conferences. Verify that your contact information is valid.
+                        </div>
+                        <ul style={{ listStyleType: "disc", marginLeft: '40px' }}>
+                            <li>
+                                <b>64794X</b> for the Conference ID
                             </li>
                             <li>your email address</li>
                             <li>a password</li>
                         </ul>
-                        <li>
-                            Continue to enter information as prompted. An Online
-                            confirmation will be displayed, and an email confirmation will
-                            be sent verifying your account setup.
-                        </li>
-                    </ul>
-                    <li>
-                        Previous users of PDF eXpress need to follow the above steps but
-                        should enter the same password that was used for previous
-                        conferences. Verify that your contact information is valid.
-                    </li>
-                    <ul className="list-inside list-disc ml-8">
-                        <li>
-                            <b>ID_NUM*</b> for the Conference ID (ID_NUM* is the conference
-                            ID.)
-                        </li>
-                        <li>your email address</li>
-                        <li>a password</li>
                     </ul>
                 </ul>
-            </ul>
+
+                <div className="mt-6 mb-2 font-semibold">IEEE Copyright Form</div>
+                <ul className="ml-4" style={{ listStyleType: "disc" }}>
+                    <li>
+                        Authors of accepted paper(s) must submit completed copyright form(s)
+                        along with the final manuscript submission. Papers submitted without
+                        copyright form will not be published.
+                    </li>
+                    <li>
+                        Use "Copyright form" in the Camera Ready paper submission page
+                        available on Microsoft CMT.
+                    </li>
+                    <li>
+                        Fill your copyright form as follows:
+                        <ul style={{ listStyleType: "decimal", marginLeft: '40px' }}>
+                            <li>
+                                Write your paper title at <br />TITLE OF PAPER/ARTICLE/REPORT,
+                                INCLUDING ALL CONTENT IN ANY FORM, FORMAT, OR MEDIA
+                                (hereinafter, “the Work”)
+                            </li>
+                            <li>Write list of authors at <br />COMPLETE LIST OF AUTHORS:</li>
+                            <li>
+                                IEEE PUBLICATION TITLE (Journal, Magazine, Conference, Book): 2024 9th
+                                International Conference on Information Technology Research (ICITR) (64794)
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div className="mt-6 mb-2 font-semibold">Camera Ready Paper Submission</div>
+                <p>
+                    Send your IEEE PDF compliant camera-ready paper should be submitted to Microsoft CMT along
+                    with scanned copy of the duly completed copyright form. Deadline for the camera-ready paper
+                    submission is 23.59 hours IST of{" "}
+                    <b>
+                        December 2, 2024.
+                    </b>
+                </p>
+            </div>
         ),
     },
     {
-        question: "IEEE Copyright Form",
+        question: "Registration",
         answer: (
-            <ul className="list-disc mt-4">
-                <li>
-                    Authors of accepted paper(s) must submit completed copyright form(s)
-                    along with the final manuscript submission. Papers submitted without
-                    copyright form will not be published.
-                </li>
-                <li>
-                    Use "Copyright form" in the Camera Ready paper submission page
-                    available on Microsoft CMT.
-                </li>
-                <li>
-                    Fill your copyright form as follows:
-                    <ul className="list-inside list-decimal ml-8">
-                        <li>
-                            Write your paper title at TITLE OF PAPER/ARTICLE/REPORT,
-                            INCLUDING ALL CONTENT IN ANY FORM, FORMAT, OR MEDIA
-                            (hereinafter, “the Work”)
-                        </li>
-                        <li>Write list of authors at COMPLETE LIST OF AUTHORS:</li>
-                        <li>
-                            Write the conference title at IEEE PUBLICATION TITLE (Journal,
-                            Magazine, Conference, Book): 2024 9th International Conference
-                            on Information Technology Research (ICITR) (ID_NUM*)
-                        </li>
+            <>
+                <p>
+                    ICITIR 2024 will be held at the Faculty of Information Technology, University of Moratuwa physically and it will facilitate foreign participants via online platform.
+                </p>
+                <br />
+                <p>
+                    Author Registration and Payment Deadline: <b>2nd December 2024</b>
+                </p>
+                <br />
+                <p>
+                    Register by filling this registration form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYEq-wE7nz-rvcbTbI18BKnXEYcWFA0muwg93NcccbYoKMDA/viewform?usp=sharing" style={{ color: "blue", textDecoration: "underline" }}>https://docs.google.com/forms/d/e/1FAIpQLSeYEq-wE7nz-rvcbTbI18BKnXEYcWFA0muwg93NcccbYoKMDA/viewform?usp=sharing</a>
+                </p>
+                <br />
+                <b>Payment Method</b>
+                <br />
+                You can pay via one of the following options:
+                <br />
+                <br />
+                <ul style={{ listStyleType: "disc" }} className="ml-4">
+                    <li><b>For Authors with local affiliations:</b></li>
+                    <ul style={{ listStyleType: "circle", marginLeft: "50px" }}>
+                        <li>Option 1: You may pay to any Bank of Ceylon branch or pay via online banking facilities. Use following details:</li>
+                        <ul style={{ listStyleType: "disc", marginLeft: "50px" }}>
+                            <li>Bank - Bank of Ceylon</li>
+                            <li>Branch - Katubedda</li>
+                            <li>A/C No - 306836</li>
+                            <li>A/C Name - Bursar, University of Moratuwa</li>
+                        </ul>
                     </ul>
-                </li>
-            </ul>
-        ),
-    },
-    {
-        question: "Camera Ready Paper Submission",
-        answer: (
-            <p>
-                Send your IEEE PDF compliant camera-ready paper should be submitted to
-                Microsoft CMT along with scanned copy of the duly completed
-                copyrightform.{" "}
-                <b>
-                    Deadline for the camera-ready paper submission will be announced in
-                    advance.
-                </b>
-            </p>
-        ),
+                </ul>
+                <p className="ml-4">
+                    Clearly indicate your Name and Telephone number. Use “ICITR 2024 - Paper ID” as reason/memo for payment. Please ask the bank teller to print these on the deposit slip. If you are transferring via online banking, indicate the reason as “ICITR 2024 - Paper ID”.
+                </p>
+                <br />
+                <ul style={{ listStyleType: "circle", marginLeft: "50px" }}>
+                    <li>Option 2: To Shroff counter of the University of Moratuwa. The counter is open on weekdays from 9.00 am - 12.30 pm and 1.30 pm - 3.00 pm.</li>
+                </ul>
+                <br />
+                <ul style={{ listStyleType: "disc" }} className="ml-4">
+                    <li><b>For Authors with foreign affiliations:</b></li>
+                    <ul style={{ listStyleType: "circle", marginLeft: "50px" }}>
+                        <li>Payment needs to be completed as a bank transfer. Transfer details should be updated in the author registration form.</li>
+                        <ul style={{ listStyleType: "disc", marginLeft: "50px" }}>
+                            <li>Bank - Bank of Ceylon</li>
+                            <li>Branch - Katubedda</li>
+                            <li>A/C No - 306836</li>
+                            <li>A/C Name - Bursar, University of Moratuwa</li>
+                            <li>SWIFT Code: BCEYLKLX</li>
+                            <li>Bank Address: No: 605, Galle Road, Katubedda, Sri Lanka</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <p className="ml-4">
+                    Clearly indicate your Name and Telephone number. Use “ICITR 2024 - Paper ID” as reason/memo for payment. Please ask the bank teller to print these on the deposit slip. If you are transferring via online banking, indicate the reason as “ICITR 2024 - Paper ID”.
+                </p>
+                <br />
+                <p>
+                    Note: Please contact the registration chair for any clarification. Email: <a href="mailto:nisharab@uom.lk" style={{ color: "blue", textDecoration: "underline" }}>nisharab@uom.lk</a> and CC: to <a href="mailto:icitr@uom.lk" style={{ color: "blue", textDecoration: "underline" }}>icitr@uom.lk</a>
+                </p>
+            </>
+        )
     },
     {
         question: "Presentation",
         answer: (
             <>
-                <ul className=" list-disc mt-4">
+                <ul style={{ listStyleType: "disc" }}>
                     <li>
-                        Each paper is assigned a total of 15 minutes, and the breakdown is
+                        Each paper is assigned a total of <b>15 minutes</b>, and the breakdown is
                         as follows:
-                        <ul className="list-inside list-decimal ml-4">
-                            <li>Presentation: 10 Minutes</li>
-                            <li>Q&A: 5 Minutes</li>
+                        <ul style={{ listStyleType: "circle", marginLeft: "50px" }}>
+                            <li><b>Presentation:</b> 10 Minutes</li>
+                            <li><b>Q&A:</b> 5 Minutes</li>
                         </ul>
                     </li>
-                    <li>
+                    <p>
                         Please keep these time limits in mind when preparing your
                         presentation.
-                    </li>
+                    </p>
+                    <br />
                     <li>
-                        The time limit will be strictly enforced due to the substantial
+                        The <u>time limit will be strictly enforced</u> due to the substantial
                         number of papers scheduled in each session.
                     </li>
+                    <br />
                     <li>
-                        Presenting authors are asked to arrive at their session 10 minutes
-                        before the scheduled start of the respective session, allowing the
-                        Session Chair to verify the attendance of the presenting authors.
+                        Presenting authors are asked to arrive at their session 10 minutes before the scheduled start of the respective session, allowing the <u>Session Chair to verify the attendance</u> of the presenting authors.
                     </li>
+                    <br />
                     <li>
-                        We recommend that one author conduct the entire presentation,
-                        adhering to the abovementioned time limits.
+                        We recommend that <u>one author conduct the entire presentation</u>, adhering to the above-mentioned time limits.
                     </li>
+                    <br />
                     <li>
-                        Each room will comprise a multimedia projector and a computer with
-                        Microsoft PowerPoint, and PDF reader installed.
+                        Each room will comprise a multimedia projector and a computer with Microsoft PowerPoint, and PDF reader installed.
                     </li>
+                    <br />
                     <li>
                         Presenting authors may use the computer provided in the venue.
                     </li>
+                    <br />
                     <li>
-                        Please make sure to preview your presentation with the multimedia
-                        setup in the room before the scheduled start of the respective
-                        session.
+                        Please make sure to preview your presentation with the multimedia setup in the room before the scheduled start of the respective session.
                     </li>
+                    <br />
                     <li>
-                        If you need any assistance, please contact the conference
-                        organizing staff.
+                        If you need any assistance, please contact the conference organizing staff.
                     </li>
+                    <br />
                 </ul>
                 <p className=" font-semibold mt-4">
                     Please note that the papers that are not presented will not be sent
