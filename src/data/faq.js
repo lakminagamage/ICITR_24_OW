@@ -236,51 +236,117 @@ const faqs = [
         ),
     },
     {
+        question: "Registration",
+        answer: (
+            <>
+                <p>
+                    ICITIR 2024 will be held at the Faculty of Information Technology, University of Moratuwa physically and it will facilitate foreign participants via online platform.
+                </p>
+                <br />
+                <p>
+                    Author Registration and Payment Deadline: <b>2nd December 2024</b>
+                </p>
+                <br />
+                <p>
+                    Register by filling this registration form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYEq-wE7nz-rvcbTbI18BKnXEYcWFA0muwg93NcccbYoKMDA/viewform?usp=sharing" style={{ color: "blue", textDecoration: "underline" }}>https://docs.google.com/forms/d/e/1FAIpQLSeYEq-wE7nz-rvcbTbI18BKnXEYcWFA0muwg93NcccbYoKMDA/viewform?usp=sharing</a>
+                </p>
+                <br />
+                <b>Payment Method</b>
+                <br />
+                You can pay via one of the following options:
+                <br />
+                <br />
+                <ul style={{ listStyleType: "disc" }} className="ml-4">
+                    <li><b>For Authors with local affiliations:</b></li>
+                    <ul style={{ listStyleType: "circle", marginLeft: "50px" }}>
+                        <li>Option 1: You may pay to any Bank of Ceylon branch or pay via online banking facilities. Use following details:</li>
+                        <ul style={{ listStyleType: "disc", marginLeft: "50px" }}>
+                            <li>Bank - Bank of Ceylon</li>
+                            <li>Branch - Katubedda</li>
+                            <li>A/C No - 306836</li>
+                            <li>A/C Name - Bursar, University of Moratuwa</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <p className="ml-4">
+                    Clearly indicate your Name and Telephone number. Use “ICITR 2024 - Paper ID” as reason/memo for payment. Please ask the bank teller to print these on the deposit slip. If you are transferring via online banking, indicate the reason as “ICITR 2024 - Paper ID”.
+                </p>
+                <br />
+                <ul style={{ listStyleType: "circle", marginLeft: "50px" }}>
+                    <li>Option 2: To Shroff counter of the University of Moratuwa. The counter is open on weekdays from 9.00 am - 12.30 pm and 1.30 pm - 3.00 pm.</li>
+                </ul>
+                <br />
+                <ul style={{ listStyleType: "disc" }} className="ml-4">
+                    <li><b>For Authors with foreign affiliations:</b></li>
+                    <ul style={{ listStyleType: "circle", marginLeft: "50px" }}>
+                        <li>Payment needs to be completed as a bank transfer. Transfer details should be updated in the author registration form.</li>
+                        <ul style={{ listStyleType: "disc", marginLeft: "50px" }}>
+                            <li>Bank - Bank of Ceylon</li>
+                            <li>Branch - Katubedda</li>
+                            <li>A/C No - 306836</li>
+                            <li>A/C Name - Bursar, University of Moratuwa</li>
+                            <li>SWIFT Code: BCEYLKLX</li>
+                            <li>Bank Address: No: 605, Galle Road, Katubedda, Sri Lanka</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <p className="ml-4">
+                    Clearly indicate your Name and Telephone number. Use “ICITR 2024 - Paper ID” as reason/memo for payment. Please ask the bank teller to print these on the deposit slip. If you are transferring via online banking, indicate the reason as “ICITR 2024 - Paper ID”.
+                </p>
+                <br />
+                <p>
+                    Note: Please contact the registration chair for any clarification. Email: <a href="mailto:nisharab@uom.lk" style={{ color: "blue", textDecoration: "underline" }}>nisharab@uom.lk</a> and CC: to <a href="mailto:icitr@uom.lk" style={{ color: "blue", textDecoration: "underline" }}>icitr@uom.lk</a>
+                </p>
+            </>
+        )
+    },
+    {
         question: "Presentation",
         answer: (
             <>
-                <ul className=" list-disc mt-4">
+                <ul style={{ listStyleType: "disc" }}>
                     <li>
-                        Each paper is assigned a total of 15 minutes, and the breakdown is
+                        Each paper is assigned a total of <b>15 minutes</b>, and the breakdown is
                         as follows:
-                        <ul className="list-inside list-decimal ml-4">
-                            <li>Presentation: 10 Minutes</li>
-                            <li>Q&A: 5 Minutes</li>
+                        <ul style={{ listStyleType: "circle", marginLeft: "50px" }}>
+                            <li><b>Presentation:</b> 10 Minutes</li>
+                            <li><b>Q&A:</b> 5 Minutes</li>
                         </ul>
                     </li>
-                    <li>
+                    <p>
                         Please keep these time limits in mind when preparing your
                         presentation.
-                    </li>
+                    </p>
+                    <br />
                     <li>
-                        The time limit will be strictly enforced due to the substantial
+                        The <u>time limit will be strictly enforced</u> due to the substantial
                         number of papers scheduled in each session.
                     </li>
+                    <br />
                     <li>
-                        Presenting authors are asked to arrive at their session 10 minutes
-                        before the scheduled start of the respective session, allowing the
-                        Session Chair to verify the attendance of the presenting authors.
+                        Presenting authors are asked to arrive at their session 10 minutes before the scheduled start of the respective session, allowing the <u>Session Chair to verify the attendance</u> of the presenting authors.
                     </li>
+                    <br />
                     <li>
-                        We recommend that one author conduct the entire presentation,
-                        adhering to the abovementioned time limits.
+                        We recommend that <u>one author conduct the entire presentation</u>, adhering to the above-mentioned time limits.
                     </li>
+                    <br />
                     <li>
-                        Each room will comprise a multimedia projector and a computer with
-                        Microsoft PowerPoint, and PDF reader installed.
+                        Each room will comprise a multimedia projector and a computer with Microsoft PowerPoint, and PDF reader installed.
                     </li>
+                    <br />
                     <li>
                         Presenting authors may use the computer provided in the venue.
                     </li>
+                    <br />
                     <li>
-                        Please make sure to preview your presentation with the multimedia
-                        setup in the room before the scheduled start of the respective
-                        session.
+                        Please make sure to preview your presentation with the multimedia setup in the room before the scheduled start of the respective session.
                     </li>
+                    <br />
                     <li>
-                        If you need any assistance, please contact the conference
-                        organizing staff.
+                        If you need any assistance, please contact the conference organizing staff.
                     </li>
+                    <br />
                 </ul>
                 <p className=" font-semibold mt-4">
                     Please note that the papers that are not presented will not be sent
