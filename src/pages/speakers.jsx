@@ -20,13 +20,13 @@ function speakers() {
         "Tandon School of Engineering, Department of Technology Management and Innovation (TMI) & Center for Urban Science and Progress (CUSP), New York University, USA",
       imageUrl: "img/speakers/taka.jpg",
     },
-    {
-      name: "Professor Joshi Manohar",
-      role: "",
-      university:
-        "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
-      imageUrl: "img/speakers/profjoshi.jpg",
-    },
+    // {
+    //   name: "Professor Joshi Manohar",
+    //   role: "",
+    //   university:
+    //     "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
+    //   imageUrl: "img/speakers/profjoshi.jpg",
+    // },
   ];
   return (
     <div className="text-center bg-white">
