@@ -37,6 +37,9 @@ const posts = [
   },
 ];
 
+import ButtonPrimary from "@/components/ButtonPrimary";
+import ButtonSecondary from "@/components/ButtonSecondary";
+
 export default function WorkshopLayout() {
   return (
     <div className="relative isolate bg-white px-6 pb-24 sm:pb-32 lg:px-20 pt-8">
@@ -52,6 +55,15 @@ export default function WorkshopLayout() {
           style={{ width: "80%" }}
         ></div>
         {/* hr */}
+
+        <div className="mt-6 flex items-center justify-center gap-x-6">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScbk181hl_V3muUZIsv04PjA8scVkYIZ2VzqHGwU3osr1gHPA/viewform?usp=sharing">
+                  <ButtonPrimary
+                    text="Click here to Register for Workshops"
+                  ></ButtonPrimary>
+                </a>
+              </div>
+
         <div className="mt-10 flex flex-wrap justify-center w-full pt-4 sm:pt-6">
           {posts.map((post) => (
             <article
@@ -73,7 +85,7 @@ export default function WorkshopLayout() {
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white p-6">
                 <div className="flex-1">
-                  <p className="text-sm font-medium text-blue-600">
+                  <div className="text-sm font-medium text-blue-600">
                     <a
                       href={post.author.href}
                       className="hover:underline text-xl"
@@ -85,7 +97,7 @@ export default function WorkshopLayout() {
                         {role.trim()}
                       </p>
                     ))}
-                  </p>
+                  </div>
                 </div>
                 <div className="mt-6 flex items-center justify-center">
                   <div className="flex space-x-2 text-sm text-black">
