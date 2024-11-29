@@ -85,7 +85,7 @@ export default function WorkshopLayout() {
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white p-6">
                 <div className="flex-1">
-                  <p className="text-sm font-medium text-blue-600">
+                  <div className="text-sm font-medium text-blue-600">
                     <a
                       href={post.author.href}
                       className="hover:underline text-xl"
@@ -97,7 +97,7 @@ export default function WorkshopLayout() {
                         {role.trim()}
                       </p>
                     ))}
-                  </p>
+                  </div>
                 </div>
                 <div className="mt-6 flex items-center justify-center">
                   <div className="flex space-x-2 text-sm text-black">
