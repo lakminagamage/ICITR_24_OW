@@ -448,6 +448,12 @@ const faqs = [
                             </tbody>
                         </table>
                     </div>
+                    <p className="mt-4">
+                        <b>Note:</b> If the registered author is a <b>permanent staff member of the University of 
+                        Moratuwa</b>, please email staff member’s name, employee code, department, contact 
+                        number, CMT paper ID and paper title to <a href="mailto:icitr@uom.lk" style={{ color: "blue", textDecoration: "underline" }}>icitr@uom.lk</a> on or before 2nd December to 
+                        advise the registration details.
+                    </p>
                 </>
             ),
     },
