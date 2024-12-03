@@ -66,7 +66,7 @@ function Partners() {
             unoptimized="true"
             src="/img/partners/wso2.png"
             alt="Gold Sponsor"
-            className="w-full max-w-xs h-auto md:w-auto md:h-20"
+            className="w-full max-w-48 h-auto md:w-auto md:h-20"
           />
           <div className='text-lg mt-2 font-semibold text-black text-center'>Gold Sponsor</div>
         </div>
