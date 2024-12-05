@@ -42,9 +42,9 @@ function Hero({
 
             {buttonsVisible && (
               <div className="mt-6 flex items-center justify-center gap-x-6">
-                <a href="https://cmt3.research.microsoft.com/ICITR2024">
+                <a href="https://icitr.uom.lk">
                   <ButtonPrimary
-                    text="Submit Papers"
+                    text="Registrations Closed"
                     
                   ></ButtonPrimary>
                 </a>
