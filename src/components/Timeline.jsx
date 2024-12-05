@@ -18,14 +18,14 @@ function Timeline() {
       description: "",
     },
     {
-      date: "2nd December",
+      date: "2nd December ",
       title: "Camera Ready Submission",
-      description: "",
+      description: "[Notice : For Track 2 and Track 3 Deadline is 4th December Midnight]",
     },
     {
       date: "2nd December",
       title: "Registration Close",
-      description: "",
+      description: "[Notice : For Track 2 and Track 3 Deadline is 4th December Midnight]",
     },
     {
       date: "5th December",
