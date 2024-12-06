@@ -32,4 +32,67 @@ body {
   }
 }
 
-a { word-wrap: break-word; }
+a {
+  word-wrap: break-word;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradient-blue-green {
+  background: linear-gradient(
+      rgba(69, 107, 213, 0.6), 
+      rgba(159, 74, 228, 0.6),
+      rgba(59, 130, 246, 0.6),
+      rgba(24, 200, 197, 0.6)
+    ), 
+    url('/img/hero_back2.jpg');
+  background-size: 1000% 1000%, cover;
+  animation: gradientAnimation 20s ease infinite;
+}
+
+.neon-border {
+  position: relative;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.neon-border::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #00ff00, #1825dc, #45b3de, #00ff00);
+  background-size: 200% 200%;
+  animation: neonColorAnimation 6s linear infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+@keyframes neonColorAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

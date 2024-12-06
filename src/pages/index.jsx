@@ -13,9 +13,6 @@ export default function Home() {
       <Hero />
       <Clock />
       <EventDescription />
-      <Team />
-      <Partners />
-      <PhotoGallery />
       <ContactForm />
       <Footer />
     </div>

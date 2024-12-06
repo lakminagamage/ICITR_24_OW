@@ -7,18 +7,10 @@ import Spinner from "@/components/Spinner";
 
 const navigation = [
   { name: "HOME", href: "/" },
-  { name: "AGENDA", href: "/agenda" },
+
   { name: "FOR AUTHORS", href: "/paperSubmission" },
   { name: "SPEAKERS", href: "/speakers" },
   { name: "WORKSHOPS", href: "/workshops" },
-  {
-    name: "COMMITTEE",
-    href: "",
-    subMenu: [
-      { name: "ORGANIZING COMMITTEE", href: "/organizingCommittee" },
-      { name: "TECHNICAL PROGRAM COMMITTEE", href: "/technicalCommittee" },
-    ],
-  },
   { name: "PAST ABSTRACTS", href: "/pastAbstracts" },
   { name: "CONTACT US", href: "/contacts" },
 ];
@@ -43,8 +35,8 @@ function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 bg-white ${
-        isScrolled ? "bg-opacity-100" : "bg-opacity-50"
+      className={`fixed inset-x-0 top-0 z-40 bg-blue-100 ${
+        isScrolled ? "bg-opacity-100" : "bg-opacity-80"
       } backdrop-blur-md`}
     >
       <nav
@@ -56,7 +48,7 @@ function Navbar() {
             <span className="sr-only">EC-UOM</span>
             <Image
               className=""
-              src="/img/logo.png"
+              src="/img/Logo_2025.png"
               width={100}
               height={50}
               alt=""
