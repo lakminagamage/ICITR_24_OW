@@ -19,7 +19,7 @@ const navigation = [
       { name: "TECHNICAL PROGRAM COMMITTEE", href: "/technicalCommittee" },
     ],
   },
-  { name: "PAST ABSTRACTS", href: "/pastAbstracts" },
+  { name: "PROCEEDINGS", href: "/pastAbstracts" },
   { name: "CONTACT US", href: "/contacts" },
 ];
 

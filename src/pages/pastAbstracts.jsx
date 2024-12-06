@@ -7,7 +7,7 @@ import Link from "next/link";
 function pastAbstracts() {
   const abstracts = [
     {
-      id: 1,
+      id: 2,
       title: "Abstracts of Proceedings 2023",
       year: "2023",
       link: "https://heyzine.com/flip-book/89e75d659c.html",
@@ -15,7 +15,7 @@ function pastAbstracts() {
       fileName: "/abstracts/abstracts-of-the-proceeding-ICITR-2023.pdf",
     },
     {
-      id: 2,
+      id: 3,
       title: "Abstracts of Proceedings 2022",
       year: "2022",
       link: "https://heyzine.com/flip-book/60cffb31d6.html",
@@ -23,7 +23,7 @@ function pastAbstracts() {
       fileName: "/abstracts/abstracts-of-the-proceeding-ICITR-2022.pdf",
     },
     {
-      id: 3,
+      id: 4,
       title: "Abstracts of Proceedings 2021",
       year: "2021",
       link: "https://heyzine.com/flip-book/f2a19e1e70.html",
@@ -31,7 +31,7 @@ function pastAbstracts() {
       fileName: "/abstracts/abstracts-of-the-proceeding-ICITR-2021.pdf",
     },
     {
-      id: 4,
+      id: 5,
       title: "Abstracts of Proceedings 2020",
       year: "2020",
       link: "https://heyzine.com/flip-book/8d9307f0e9.html",
@@ -39,6 +39,15 @@ function pastAbstracts() {
       fileName: "/abstracts/abstracts-of-the-proceeding-ICITR-2020.pdf",
     },
   ];
+
+  const featuredAbstract = {
+    id: 1,
+    title: "Abstracts of Proceedings 2024",
+    year: "2024",
+    link: "https://heyzine.com/flip-book/e6ae69ca3a.html",
+    image: "/img/abstracts/abs2024.png",
+    fileName: "/abstracts/abstract-2024.pdf",
+  };
 
   const [selectedDocument, setSelectedDocument] = useState(null);
 
@@ -113,12 +122,36 @@ function pastAbstracts() {
             </div>
           </div>
         </div>
+        {/* Featured Abstract */}
+        <div className="flex flex-col justify-center items-center  rounded-lg py-6 px-4 mb-8">
+          <img
+            src={featuredAbstract.image}
+            alt={featuredAbstract.title}
+            className="w-[200px] h-[300px] mb-4 rounded-lg"
+          />
+          <div className="text-2xl font-bold text-blue-primary text-center mb-2">
+            {featuredAbstract.title}
+          </div>
+          <div className="text-md text-gray-primary mb-4">
+            {featuredAbstract.year}
+          </div>
+          <div className="flex space-x-4">
+            <ButtonPrimary
+              text="View Abstracts"
+              onClick={() => setSelectedDocument(featuredAbstract)}
+            />
+            <a href={featuredAbstract.fileName} download>
+              <ButtonPrimary text="Download PDF" />
+            </a>
+          </div>
+        </div>
 
-        <div className="w-full flex flex-wrap mt-8 justify-center items-center space-x-4 space-y-4">
+        {/* Other Abstracts */}
+        <div className="w-full flex flex-wrap justify-center items-center space-x-4 space-y-4">
           {abstracts.map((abstract) => (
             <div
               key={abstract.id}
-              className="flex flex-col justify-evenly items-center bg-white  rounded-lg py-4 px-4"
+              className="flex flex-col justify-evenly items-center rounded-lg py-4 px-4"
             >
               <img
                 src={abstract.image}
@@ -139,15 +172,15 @@ function pastAbstracts() {
           ))}
         </div>
 
+        {/* Selected Document Viewer */}
         {selectedDocument != null && (
-          <div className="w-full flex  flex-col justify-center items-center mt-12">
+          <div className="w-full flex flex-col justify-center items-center mt-12">
             <div className="text-2xl font-semibold text-blue-primary text-center">
               {selectedDocument.title}
             </div>
-            {/* DOwnload Button */}
             <div className="mt-4">
               <a href={selectedDocument.fileName}>
-                <ButtonPrimary text="Download PDF" onClick={() => {}} />
+                <ButtonPrimary text="Download PDF" />
               </a>
             </div>
             <div
