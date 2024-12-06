@@ -103,7 +103,7 @@ function Hero({
               className="my-0 text-md sm:text-lg px-4 tracking-tight text-gray-primary"
               style={{ lineHeight: "1.8" }}
               dangerouslySetInnerHTML={{
-                __html: `5<sup>th</sup> and 6<sup>th</sup> December 2025<br>University of Moratuwa, Sri Lanka`,
+                __html: `December 2025<br>University of Moratuwa, Sri Lanka`,
               }}
             ></span>
 
