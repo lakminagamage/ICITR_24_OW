@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>ICITR - 2024</title>
+        <title>ICITR - 2025</title>
       </Head>
       <Component {...pageProps} />
     </>
