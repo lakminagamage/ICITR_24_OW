@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div className="bg-white">
       <Hero />
-      <Clock />
-      <EventDescription />
+      
+      
       <ContactForm />
       <Footer />
     </div>

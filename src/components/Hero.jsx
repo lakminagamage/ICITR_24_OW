@@ -3,14 +3,13 @@ import Navbar from "@/components/Navbar";
 import ButtonPrimary from "@/components/ButtonPrimary";
 import ButtonSecondary from "@/components/ButtonSecondary";
 import { useRouter } from "next/router";
-import Confetti from "react-confetti";
+import confetti from "canvas-confetti";
 
 function Hero({
   subtitle = "10th International Conference<br />on Information Technology Research",
   buttonsVisible = true,
 }) {
   const router = useRouter();
-  const [showConfetti, setShowConfetti] = React.useState(true);
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
@@ -30,16 +29,56 @@ function Hero({
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowConfetti(false), 14000);
-    return () => clearTimeout(timer);
+    const duration = 15 * 1000;
+    const animationEnd = Date.now() + duration;
+    const defaults = {
+      startVelocity: 30,
+      spread: 360,
+      ticks: 60,
+      zIndex: 0,
+    };
+
+    function randomInRange(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    const interval = setInterval(() => {
+      const timeLeft = animationEnd - Date.now();
+
+      if (timeLeft <= 0) {
+        clearInterval(interval);
+        return;
+      }
+
+      const particleCount = 50 * (timeLeft / duration);
+
+      // Confetti burst
+      confetti({
+        ...defaults,
+        particleCount,
+        origin: {
+          x: randomInRange(0.1, 0.3),
+          y: Math.random() - 0.2,
+        },
+      });
+      confetti({
+        ...defaults,
+        particleCount,
+        origin: {
+          x: randomInRange(0.7, 0.9),
+          y: Math.random() - 0.2,
+        },
+      });
+    }, 250); // Interval between bursts
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <div id="hero" className="bg-white relative">
       <Navbar />
-      {showConfetti && <Confetti width={windowSize.width} height={windowSize.height} />}
       <div
-        className=" bg-gradient-blue-green relative isolate overflow-hidden pt-14 bg-fixed bg-center"
+        className="bg-gradient-blue-green relative isolate overflow-hidden pt-14 bg-fixed bg-center"
         onClick={() => router.push("/")}
       >
         {/* Gradient Overlay */}
@@ -48,7 +87,7 @@ function Hero({
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center flex flex-col items-center relative">
             {/* Neon Border with Logo */}
-            <div className="neon-border">
+            <div >
               <img
                 className="mb-4 w-48 sm:w-96"
                 src="/img/Logo_2025.png"
