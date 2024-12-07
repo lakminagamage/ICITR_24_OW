@@ -7,6 +7,7 @@ import Spinner from "@/components/Spinner";
 
 const navigation = [
   { name: "HOME", href: "/" },
+  { name: "AGENDA", href: "/agenda" },
   { name: "FOR AUTHORS", href: "/paperSubmission" },
   { name: "SPEAKERS", href: "/speakers" },
   { name: "WORKSHOPS", href: "/workshops" },
@@ -18,7 +19,7 @@ const navigation = [
       { name: "TECHNICAL PROGRAM COMMITTEE", href: "/technicalCommittee" },
     ],
   },
-  { name: "PAST ABSTRACTS", href: "/pastAbstracts" },
+  { name: "PROCEEDINGS", href: "/pastAbstracts" },
   { name: "CONTACT US", href: "/contacts" },
 ];
 

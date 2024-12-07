@@ -7,6 +7,7 @@ function speakers() {
     {
       name: "Prof. Rahmat Budiarto",
       role: "",
+      title: "Building a Resilient Digital Infrastructure: The Role of Intelligent Network Monitoring",
       university:
         "College of Computer Science and Information Technology, Al-Baha University, Saudi Arabia",
       imageUrl: "img/speakers/rahmat.jpg",
@@ -14,17 +15,18 @@ function speakers() {
     {
       name: "Professor Takahiro Yabe",
       role: "",
+      title: "Resilience of urban socioeconomic networks to behavioral changes",
       university:
         "Tandon School of Engineering, Department of Technology Management and Innovation (TMI) & Center for Urban Science and Progress (CUSP), New York University, USA",
       imageUrl: "img/speakers/taka.jpg",
     },
-    {
-      name: "Professor Joshi Manohar",
-      role: "",
-      university:
-        "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
-      imageUrl: "img/speakers/profjoshi.jpg",
-    },
+    // {
+    //   name: "Professor Joshi Manohar",
+    //   role: "",
+    //   university:
+    //     "Department of Electrical and Electronics Engineering, Presidency University, Bangalore, India",
+    //   imageUrl: "img/speakers/profjoshi.jpg",
+    // },
   ];
   return (
     <div className="text-center bg-white">
@@ -43,7 +45,7 @@ function speakers() {
 
         <div className="w-full flex flex-wrap justify-center items-center">
           {speakersList.map((speaker, index) => (
-            <div className="w-72 h-[400px] bg-white border border-gray-300 rounded-lg mx-10 overflow-hidden">
+            <div className="w-72 h-[450px] bg-white border border-gray-300 rounded-lg mx-10 overflow-hidden">
               <div className="flex justify-center items-center w-full h-60">
                 <img
                   src={speaker.imageUrl}
@@ -55,6 +57,9 @@ function speakers() {
                 <h3 className="text-lg font-bold text-blue-primary">
                   {speaker.name}
                 </h3>
+                <p className="text-sm text-gray-600 font-semibold">
+                  {speaker.title}
+                </p>
                 <p className="text-sm text-gray-600 font-semibold">
                   {speaker.role}
                 </p>

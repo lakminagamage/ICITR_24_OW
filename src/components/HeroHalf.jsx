@@ -29,7 +29,7 @@ function HeroHalf({
               <div className="mt-6 flex items-center justify-center gap-x-6">
                 <a href="#">
                   <ButtonPrimary
-                    text="Submit Papers"
+                    text="Registrations Closed"
                     onClick={() => {}}
                   ></ButtonPrimary>
                 </a>
