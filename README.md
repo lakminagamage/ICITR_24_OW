@@ -1,4 +1,4 @@
-## ICITR 2024 Official Website 
+## ICITR 2024 Official Website Repository
 
 
 # Getting Started
