@@ -44,7 +44,7 @@ function pastAbstracts() {
     id: 1,
     title: "Abstracts of Proceedings 2024",
     year: "2024",
-    link: "https://heyzine.com/flip-book/e6ae69ca3a.html",
+    link: "https://heyzine.com/flip-book/7cc520dc5c.html",
     image: "/img/abstracts/abs2024.png",
     fileName: "/abstracts/abstract-2024.pdf",
   };
